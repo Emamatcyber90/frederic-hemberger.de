@@ -1,0 +1,31 @@
+<head>
+    <meta charset="utf-8">
+    <title>{{#if title}}{{ title }} | {{/if}}{{ site.title }}</title>
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.frederic-hemberger.de">
+
+    <meta name="author" content="Frederic Hemberger">
+    <meta name="robots" content="{{#if robots}}{{ robots }}{{else}}index, follow, noodp{{/if}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+    <link rel="icon" href="/static/apple-touch-icon.png">
+
+    <link rel="canonical" href="{{ site.url }}/{{#if path}}{{ path }}/{{/if}}">
+    <link rel="publickey" href="/fhemberger.asc" type="text/plain">
+
+    <link rel="alternate" href="/feeds/feed.rss" title="Frederic Hemberger" type="application/rss+xml">
+    <link rel="alternate" href="/feeds/talks.rss" title="Frederic Hemberger: Talks" type="application/rss+xml">
+
+    <script>
+    var WebFontConfig = { google: { families: ['Source Sans Pro:300,400'] } };
+    var _paq = _paq || [];
+    if (window.location.hostname === 'frederic-hemberger.de') {
+
+        _paq.push(['trackPageView'],['enableLinkTracking'],['setTrackerUrl', '//www.frederic-hemberger.de/piwik/piwik.php'],['setSiteId', '1']);
+    }
+    </script>
+    <link rel="stylesheet" href="/static/css/styles.css" media="all">
+</head>

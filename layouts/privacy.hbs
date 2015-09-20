@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{#if lang}}{{ lang }}{{else}}en{{/if}}">
+{{> html-head }}
+
+<body>
+    {{> header }}
+
+    <main>
+        <div class="container">
+
+            {{{ contents }}}
+
+            <hr>
+            <iframe style="border:0; height:250px; width:100%" src="https://www.frederic-hemberger.de/piwik/index.php?module=CustomOptOut&action=optOut&idSite=1&language=en" seamless>
+                {{ iframe-fallback }}
+            </iframe>
+        </div>
+    </main>
+
+    {{> footer }}
+</body>
+</html>

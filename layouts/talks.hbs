@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> html-head }}
+
+<body>
+    {{> header }}
+
+    <main>
+        <div class="container">
+
+            <h2>Talks</h2>
+            <ul class="talk-list">
+                {{#each collections.talks}}
+                    <li>
+                        <h3>{{{ title }}}</h3>
+                        <div class="talk-deck">
+                            {{#each held}}
+                                {{ this.date }} · {{{ this.event }}}<br>
+                            {{/each}}
+                        </div>
+
+                        <p>{{{ intro }}}</p>
+
+                        <ul>
+                            {{#each links}}
+                                <li><a href="{{ . }}">{{ @key }}</a></li>
+                            {{/each}}
+                        </ul>
+                    </li>
+                {{/each}}
+            </ul>
+
+        </div>
+    </main>
+
+    {{> footer }}
+</body>
+</html>

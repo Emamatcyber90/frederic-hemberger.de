@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{#if lang}}{{ lang }}{{else}}en{{/if}}">
+{{> html-head }}
+
+<body>
+    {{> header }}
+
+    <main>
+        <div class="container">
+
+            <article>
+                <header>
+                    <h1>
+                        {{#if deck}}<span class="article-deck">{{ deck }}</span><span class="visually-hidden">:</span>{{/if}}
+                        {{ title }}
+                    </h1>
+                    <div class="article-meta">
+                        <time datetime="{{ strftime date }}" pubdate>{{ strftime date }}</time> ·
+                        {{#if update }}<span class="update"> updated: <time datetime="{{ strftime update }}">{{ strftime update }}</time></span> · {{/if}}
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr title="Creative Commons Attribution ShareAlike License">CC BY-SA</abbr></a>
+                    </div>
+                </header>
+
+                {{#if intro }}<p class="article-intro">{{ intro }}</p>{{/if}}
+                {{{ contents }}}
+
+            </article>
+
+        </div>
+    </main>
+
+    {{> footer }}
+</body>
+</html>

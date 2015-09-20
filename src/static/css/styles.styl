@@ -1,0 +1,93 @@
+@import '_variables'
+@import '_layout'
+@import '_navigation'
+@import '_lists'
+@import '_article-overview'
+
+html
+    box-sizing border-box
+
+    font-size 20px
+    line-height 1.5
+    font-family 'Source Sans Pro', Open Sans, Roboto, Helvetica, Arial, sans-serif
+    font-weight 300
+    background #fff
+    color #000
+
+    @media screen and (max-width $mobile-width)
+        font-size 16px
+
+    @media screen and (max-width $body-max-width)
+        margin 0 1em
+
+body
+    > header
+        color $darkgray
+
+    > footer
+        margin-top 5em
+
+img
+    max-width 100%
+
+h1,
+h2,
+h3,
+h4,
+h5
+    font-weight normal
+    color $red
+
+    a
+        color inherit
+
+a,
+a:link,
+a:visited,
+a:active
+    padded-link(3px)
+    color $blue
+    text-decoration none
+
+a:hover
+    color #fff
+    background-color $blue
+    border-radius 2px
+
+hr
+    border 1px solid $lightgray
+    border-bottom transparent
+
+strong.normal
+    font-weight normal
+
+.visually-hidden
+    position absolute
+    top -9999px
+    left -9999px
+    line-height 0
+    height 0
+    font-size 0
+
+.home-intro
+    margin-top 140px
+    font-size 1.9rem // = 38px
+    line-height 1.2
+
+    @media screen and (max-width $mobile-width)
+        font-size 1.5rem // = 30px
+        line-height 1.5
+
+    h1
+        font-size inherit
+        margin-bottom 15px
+
+        & + p
+            margin-top 0
+
+    p:last-child
+        font-size 1.5rem // = 30px
+
+    span
+        color $lightgray
+        display block

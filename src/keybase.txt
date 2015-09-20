@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/fhemberger
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://frederic-hemberger.de
+  * I am fhemberger (https://keybase.io/fhemberger) on keybase.
+  * I have a public key with fingerprint FF12 ED87 9880 7B02 24D3  F112 1255 BDEB 3EAC E9E8
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
+        "key": {
+            "fingerprint": "ff12ed8798807b0224d3f1121255bdeb3eace9e8",
+            "host": "keybase.io",
+            "key_id": "1255BDEB3EACE9E8",
+            "uid": "42dbfe56dcbe266f1e362afac833f400",
+            "username": "fhemberger"
+        },
+        "merkle_root": {
+            "ctime": 1423375428,
+            "hash": "8fd0f0016e38f541be04c5198a398bdc073a8d7f8ce8f7e330be1865ec17fdc0ca415712d1432d0baccf26c9293b3d5bfe8847e20697f9f162220c00ce29e253",
+            "seqno": 150686
+        },
+        "service": {
+            "hostname": "frederic-hemberger.de",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1423375682,
+    "expire_in": 157680000,
+    "prev": "d7d8b9d62baccd9f2490e6f7e6c04687385a14a28a48d049ebf327eefde3c8c3",
+    "seqno": 16,
+    "tag": "signature"
+}
+
+which yields the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFVkn1QFVUYxi8QRCCCxECN8rUQUcF19+zXWShHlA+/ZrxTWExJl92zZ7nLvdx7
+3XuBwHCmBmlQS8Yi0RSRNMimgLEBahIFJ2nGj2AwUCAciEpkIkeZhoyGdhlt9Py1
+Z8/zPu/ze8+pDfEzBfmkTwWNvWKN/c3n4rRkyh36d/1OQnLJ5UTaTgI5VOz0Gl9O
+sRgTaYQdl0uiB5tVV5zTJWNzkSfuviaFKMWaR3U5dRVp5s00UZliyI1iRXUWYs2t
+qYYXoSgUwDLkBQhJXiIBYGRaoShAAZaVZCzRWERYwFC3tLk83ke6EkueVlXW/xr6
+dZlZ6+isjPVZQpahL1k6YIAsKZjlZCRhwHEKhWkOiIqIIE0rDEkaQg/W7iMpNlws
+YU0PaCQuxprdga2ay7WEjbyqIaIYQNM8ywCoZxI9Nr0MKjKpkCTFYRoqLENJmGQQ
+SwlQpAUoyYjkaRHKvAIRhgqPaZqUMAU5FiOKV/RjJDIUy1NAphgayKQkIqQADglA
+oCVaZnUACBkeA5ITeEVQKA4AQCKSRBgIGLC0DuHBO5wuPRxLcpCrNPZaqYqwkdsY
+3AM+DctYU1Hq/5xmGevVbs3ldSGXQ5fYvF63J03H/5bwlruNojIsWe/bWSXVKesX
++PANU3q3R0fDQZBC4LfcqoatqqFgeQ6S+jIa4VLdUuZlKAkyBwxUWVAAI5CY00fD
+IZLhIE9DVqQYEUCRgTLJCFhSaMBjrMiYRhA9DMylEF6xUPf0qIVO0VuiYaKyxnfV
+YyafIFOAv6/xhk1BT4Q9eNhRyaELy/p67alnQ6uOTvhkTntGCtnwvZa1ybztubU3
+w8/k1sXfTR3sfP1wyVSepaD7UKuzYk+iKa93bE19cFxL7Ezj2QhL2YYtqLF9MQZt
+3DAcIx38ZNiT+OaadxJDAg5U2gftK8h7R86c8na1xX6d/ent6pPz21DTroYYsGfx
+4wPHapZHLVQ1x84Xv3vdf/jaTx0JY12x4vtyWAn3/C3L+NVrZXX1x/v7Aq73mU13
+ekz5VRkxl5Jmil7etv1K88W7navsOdCds6WhvCbJ8ufyAb5uK3V5dCjopWk8vjpi
+MWIxOT/dfuiFnMDGwStS/g9JRPz4R33Zmy5tbLru6+sMmZWimvyVvJn+E/emzieN
+gOan1tXub68NuZbmV9HbUhN8PufOMw3IwUQUzS3/sXvuqGPjQuRqojr2cPZ4wTE7
+vhzwRtmFCnir45/O0dEAuPLIjZ5AIXJ7xu6arA/rJt9etiv7ZOuAFp8+0d3fXnpz
+Q+LE1Y4Q8Tvbucf/6Bk+3RgZfS74Z/LJyeq0C4OJ8dnP2o7NBN1wp59eTCjwC6ya
+XhCOE87Q3ZM1s2Gz+2c/WJn7xau2gs1/N9UOfP59W0Nm1+at3VGfWbtXxLXshF9Z
+Jl88ZZ2vLzr4e0BP26ZdTa8lJIXfrpduTX3T9+v6Lx17f2kfiSboCHPrkMU8N3Xz
+eMm+6CIfx9O+f53Y0dI69t5/
+=qKAK
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/fhemberger
+
+==================================================================

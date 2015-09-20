@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> html-head }}
+
+<body>
+    {{> header }}
+
+    <main>
+        <div class="container">
+
+            <h2>Articles</h2>
+            <ul class="article-list">
+                {{#each collections.articles}}
+                    <li>
+                        <div class="article-deck"><time>{{ strftime date }}</time>{{#if deck}} · {{ deck }}{{/if}}</div>
+                        <a href="{{#startswith path 'http'}}{{ path }}{{ else }}/{{ path }}{{/startswith}}">{{{ title }}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+
+
+            <h2>Podcasts</h2>
+            <ul class="article-list">
+                {{#each collections.podcasts}}
+                    <li>
+                        <div class="article-deck"><time>{{ strftime date }}</time>{{#if deck}} · {{ deck }}{{/if}}</div>
+                        <a href="{{ path }}")>{{{ title }}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+
+        </div>
+    </main>
+
+    {{> footer }}
+</body>
+</html>

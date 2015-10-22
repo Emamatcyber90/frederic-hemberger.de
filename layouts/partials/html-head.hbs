@@ -24,7 +24,7 @@
     var _paq = _paq || [];
     if (window.location.hostname === 'frederic-hemberger.de') {
 
-        _paq.push(['trackPageView'],['enableLinkTracking'],['setTrackerUrl', '//www.frederic-hemberger.de/piwik/piwik.php'],['setSiteId', '1']);
+        _paq.push({{#if piwik}}{{{piwik}}},{{/if}}['trackPageView'],['enableLinkTracking'],['setTrackerUrl', '//www.frederic-hemberger.de/piwik/piwik.php'],['setSiteId', '1']);
     }
     </script>
     <link rel="stylesheet" href="/static/css/styles.css" media="all">

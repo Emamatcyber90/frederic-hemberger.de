@@ -88,11 +88,7 @@ function build () {
         // }))
         .use(layouts({
             engine: 'handlebars',
-            partials: {
-                'html-head' : 'partials/html-head',
-                'header'    : 'partials/header',
-                'footer'    : 'partials/footer'
-            },
+            partials: 'layouts/partials',
             helpers: {
                 startswith,
                 strftime,

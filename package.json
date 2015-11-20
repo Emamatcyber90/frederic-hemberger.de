@@ -7,7 +7,7 @@
     "serve": "./build.js serve",
     "inline": "./scripts/inline.sh",
     "talks": "rsync -avz --exclude '/.git*' --exclude '/index.html' talks/ build/talks",
-    "rsync": "rsync -avze 'ssh' --delete build/ aogami@arcturus.uberspace.de:/var/www/virtual/aogami/frederic-hemberger.de/",
+    "rsync": "rsync -avze 'ssh' --exclude '.DS_Store' --delete build/ aogami@arcturus.uberspace.de:/var/www/virtual/aogami/frederic-hemberger.de/",
     "deploy": "npm run build; npm run inline; npm run talks; npm run rsync"
   },
   "dependencies": {

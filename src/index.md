@@ -2,7 +2,7 @@
 layout: index.hbs
 ---
 
-# Frederic Hemberer
+# Frederic Hemberger
 Freelancer.
 JavaScript & web front-end.
 

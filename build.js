@@ -37,7 +37,7 @@ function build () {
             site: {
                 title  : 'Frederic Hemberger',
                 author : 'Frederic Hemberger',
-                url    : 'http://frederic-hemberger.de'
+                url    : 'https://frederic-hemberger.de'
             }
         })
         .use(collections({

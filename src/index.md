@@ -3,13 +3,12 @@ layout: index.hbs
 ---
 
 # Frederic Hemberger
-Freelancer.
-JavaScript & web front-end.
+Web-Developer & Consultant. Freelancer.
 
 Loves [Open Source](https://github.com/fhemberger).
 Works on [nodejs.org](https://nodejs.org).
 [Speaks](talks/) about the web.
 Wrote some [articles](articles/) (mostly in German).
-Former [Cologne.js](http://cologenjs.de) organizer.
-Runs [manifest-validator.com](http://manifest-validator.com).
 
+Focusses on JavaScript, Node.js & web front-end.
+Interested in Web-Security, DevOps, Microservices, Docker, Performance, Accessibility.

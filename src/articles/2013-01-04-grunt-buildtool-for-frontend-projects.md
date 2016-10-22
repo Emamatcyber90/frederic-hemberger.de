@@ -8,7 +8,7 @@ intro: >
 date: 2013-01-04
 ---
 
-*This article was published first on [Appliness Magazine, January 2013](http://www.appliness.com/january-issue-with-denise-jacobs/).*
+*This article was published first on Appliness Magazine, January 2013.*
 
 ## Why another build tool?
 

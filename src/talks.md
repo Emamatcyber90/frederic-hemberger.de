@@ -1,3 +1,3 @@
 ---
-layout: talks.hbs
+layout: talk-listing.hbs
 ---

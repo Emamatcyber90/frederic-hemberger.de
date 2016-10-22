@@ -1,3 +1,3 @@
 ---
-layout: article-overview.hbs
+layout: article-listing.hbs
 ---

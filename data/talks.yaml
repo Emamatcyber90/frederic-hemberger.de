@@ -1,5 +1,20 @@
 -
   lang: en
+  title: There's no party like 3rd party – handle dependencies securely
+  date: 2016-10-23
+  intro: >
+    Web developers use frameworks, libraries and 3rd-party services like analytics or
+    advertising on a daily basis. But often we don't take the time to reflect how all
+    those building blocks are affecting security. How can we take back control of what
+    code really gets executed on our websites?
+  image:
+  path: https://frederic-hemberger.de/talks/third-party/
+  links:
+      'Slides': https://frederic-hemberger.de/talks/third-party/
+  held:
+    - { date: '2016-10-23', event: '<a href="https://duesseldorf.devfest.de/">GDG DevFest</a>, Düsseldorf' }
+-
+  lang: en
   title: Don't cross the sites!
   date: 2015-08-22
   intro: >

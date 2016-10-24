@@ -114,6 +114,7 @@
     - { date: '2014-04-26', event: '<a href="http://2014.jsunconf.eu/">JS Unconf 2014</a>, Hamburg' }
 
 -
+  lang: de
   title: Digitale Selbstverteidigung – Mehr Sicherheit auf der eigenen Website
   date: 2014-01-09
   intro: >
@@ -132,6 +133,7 @@
     - { date: '2014-02-27', event: '<a href="http://webworker.ruhr/">Webworker Ruhr</a>, Essen' }
 
 -
+  lang: de
   title: Einführung in Require.js
   date: 2014-01-09
   intro: >
@@ -153,6 +155,7 @@
     - { date: '2014-02-27', event: '<a href="http://webworker.ruhr/">Webworker Ruhr</a>, Essen' }
 
 -
+  lang: de
   title: Code-Organisation in JavaScript
   date: 2013-01-10
   intro: >

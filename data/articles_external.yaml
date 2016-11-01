@@ -1,35 +1,53 @@
 -
+  date: 2016-09-28
+  lang: de
+  deck: "Screenguide #32"
+  title: Fremden Code sicher nutzen
+-
+  date: 2015-12-13
+  lang: de
+  deck: Webkrauts Adventskalender
+  title: Node.js – Neues aus dem Maschinenraum
+  path: http://webkrauts.de/artikel/2013/pflichtlektuere-fuer-webworker
+-
   date: 2013-12-24
+  lang: de
   deck: Webkrauts Adventskalender
   title: Buchtipps – Pflichtlektüre für Webworker
   path: http://webkrauts.de/artikel/2013/pflichtlektuere-fuer-webworker
 -
   date: 2013-12-20
+  lang: de
   deck: Webkrauts Adventskalender
   title: "Was heutzutage alles in den &lt;head&gt; muss – Teil 2: Social Media"
   path: http://webkrauts.de/artikel/2013/was-heutzutage-alles-in-den-head-muss-teil2
 -
   date: 2013-12-19
+  lang: de
   deck: Webkrauts Adventskalender
   title: Was heutzutage alles in den &lt;head&gt; muss – und was nicht
   path: http://webkrauts.de/artikel/2013/was-heutzutage-alles-in-den-head-muss
 -
   date: 2013-12-02
+  lang: de
   deck: Webkrauts Adventskalender
   title: Mehr Sicherheit im Frontend durch HTTP-Header
   path: http://webkrauts.de/artikel/2013/mehr-sicherheit-im-frontend-durch-http-header
 -
   date: 2012-12-24
+  lang: de
   deck: Webkrauts Adventskalender
   title: Start frei – Tipps für Berufsanfänger
   path: http://www.webkrauts.de/artikel/2012/tipps-fuer-berufsanfaenger
 -
   date: 2012-12-16
+  lang: de
   deck: Webkrauts Adventskalender
   title: Client-Server-Kommunikation mit Socket.io
   path: http://www.webkrauts.de/artikel/2012/client-server-kommunikation-mit-socketio
 -
   date: 2012-12-03
+  lang: de
   deck: Webkrauts Adventskalender
   title: (Bessere) Projekt-Pakete schnüren mit Grunt
   path: http://www.webkrauts.de/artikel/2012/build-tool-grunt

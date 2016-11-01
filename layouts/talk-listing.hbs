@@ -8,25 +8,21 @@
     <main>
         <div class="container">
 
-            <h2>Talks</h2>
-            <ul class="talk-list">
+            <h2>Talks in English</h2>
+            <ul class="talk-list" lang="en">
                 {{#each collections.talks}}
-                    <li lang="{{lang}}">
-                        <h3>{{{ title }}}</h3>
-                        <div class="talk-deck">
-                            {{#each held}}
-                                {{ this.date }} · {{{ this.event }}}<br>
-                            {{/each}}
-                        </div>
+                    {{#equals lang 'en'}}
+                        {{> talk-listing-detail}}
+                    {{/equals}}
+                {{/each}}
+            </ul>
 
-                        <p>{{{ intro }}}</p>
-
-                        <ul>
-                            {{#each links}}
-                                <li><a href="{{ . }}">{{ @key }}</a></li>
-                            {{/each}}
-                        </ul>
-                    </li>
+            <h2>Talks in German</h2>
+            <ul class="talk-list" lang="de">
+                {{#each collections.talks}}
+                    {{#equals lang 'de'}}
+                        {{> talk-listing-detail}}
+                    {{/equals}}
                 {{/each}}
             </ul>
 

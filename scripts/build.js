@@ -37,9 +37,8 @@ function build () {
             }
         })
         .use(collections({
-            artikel  : { pattern: 'artikel/*.md', refer: false },
-            articles : { pattern: 'articles/*.md', refer: false },
-            thoughts : { pattern: 'thoughts/*.md', refer: false }
+            articles : { pattern: 'articles/*.md', refer: false, sortby: 'date', reverse: true },
+            thoughts : { pattern: 'thoughts/*.md', refer: false, sortby: 'date', reverse: true }
         }))
         .use(markdown({ langPrefix: 'language-' }))
         .use(prism())
@@ -64,12 +63,12 @@ function build () {
             }
         }))
         .use(externalCollections({
-            externalArticles : `${process.cwd()}/data/external_articles.yaml`,
-            podcasts         : `${process.cwd()}/data/podcasts.yaml`,
-            talks            : `${process.cwd()}/data/talks.yaml`
+            'articles_external' : `${process.cwd()}/data/articles_external.yaml`,
+            'podcasts'          : `${process.cwd()}/data/podcasts.yaml`,
+            'talks'             : `${process.cwd()}/data/talks.yaml`
         }))
-        .use(mergeCollections(['artikel', 'articles', 'externalArticles'], 'articles'))
-        .use(mergeCollections(['artikel', 'articles', 'podcasts', 'talks'], 'all'))
+        .use(mergeCollections(['articles', 'articles_external'], 'articles'))
+        .use(mergeCollections(['articles', 'articles_external', 'podcasts', 'talks', 'thoughts'], 'all'))
         .use(feed({
             collection: 'talks',
             destination: 'feeds/talks.rss'

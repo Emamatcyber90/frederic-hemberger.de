@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <nav role="navigation">
-            <a href="/">Home</a>
+            <a href="/"{{#equals path ''}} class="active"{{/equals}}>Home</a>
             <a href="/articles/"{{#startswith path 'artikel'}} class="active"{{/startswith}}{{#startswith path 'articles'}} class="active"{{/startswith}}>Articles</a>
             <a href="/talks/"{{#startswith path 'talks'}} class="active"{{/startswith}}>Talks</a>
         </nav>

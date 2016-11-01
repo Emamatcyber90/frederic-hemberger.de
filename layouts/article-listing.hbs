@@ -8,19 +8,27 @@
     <main>
         <div class="container">
 
-            <h2>Articles</h2>
-            <ul class="article-list">
+            <h2>Articles in English</h2>
+            <ul class="article-list" lang="en">
                 {{#each collections.articles}}
-                    <li>
-                        <div class="article-deck"><time>{{ strftime date }}</time>{{#if deck}} · {{ deck }}{{/if}}</div>
-                        <a href="{{#startswith path 'http'}}{{ path }}{{ else }}/{{ path }}{{/startswith}}">{{{ title }}}</a>
-                    </li>
+                    {{#equals lang 'en'}}
+                        {{> article-listing-detail }}
+                    {{/equals}}
+                {{/each}}
+            </ul>
+
+            <h2>Articles in German</h2>
+            <ul class="article-list" lang="de">
+                {{#each collections.articles}}
+                    {{#equals lang 'de'}}
+                        {{> article-listing-detail }}
+                    {{/equals}}
                 {{/each}}
             </ul>
 
 
-            <h2>Podcasts</h2>
-            <ul class="article-list">
+            <h2>Podcasts in German</h2>
+            <ul class="article-list" lang="de">
                 {{#each collections.podcasts}}
                     <li>
                         <div class="article-deck"><time>{{ strftime date }}</time>{{#if deck}} · {{ deck }}{{/if}}</div>

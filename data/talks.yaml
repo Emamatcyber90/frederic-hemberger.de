@@ -1,5 +1,16 @@
 -
   lang: en
+  title: A quick introduction to Kubernetes
+  date: 2017-02-09
+  intro:
+  image:
+  path: https://frederic-hemberger.de/talks/kubernetes-quick-intro/
+  links:
+      'Slides': https://frederic-hemberger.de/talks/kubernetes-quick-intro/
+  held:
+    - { date: '2017-02-09', event: '<a href="https://www.meetup.com/de-DE/devops-duesseldorf/">DevOps Düsseldorf</a>, Düsseldorf' }
+-
+  lang: en
   title: There's no party like 3rd party – handle dependencies securely
   date: 2016-10-23
   intro: >

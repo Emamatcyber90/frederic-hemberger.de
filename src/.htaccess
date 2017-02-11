@@ -205,6 +205,22 @@ AddDefaultCharset utf-8
 
 FileETag None
 
+<Files *.html.br>
+    AddType "text/html" .br
+    AddEncoding br .br
+</Files>
+<Files *.css.br>
+    AddType "text/css" .br
+    AddEncoding br .br
+</Files>
+<Files *.js.br>
+    AddType "application/javascript" .br
+    AddEncoding br .br
+</Files>
+<Files *.svg.br>
+    AddType "image/svg+xml" .br
+    AddEncoding br .br
+</Files>
 
 # ----------------------------------------------------------------------
 # | Rewrites                                                           |
@@ -250,5 +266,10 @@ FileETag None
     # Redirect to HTTPS
     RewriteCond %{HTTPS} !=on
     RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+    # Brotli compression
+    RewriteCond %{HTTP:Accept-Encoding} br
+    RewriteCond %{REQUEST_FILENAME}.br -f
+    RewriteRule ^(.*)$ $1.br [L]
 
 </IfModule>

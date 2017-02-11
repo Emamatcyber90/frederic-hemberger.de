@@ -21,7 +21,7 @@
                     </div>
                 </header>
 
-                {{#if intro }}<p class="article-intro">{{ intro }}</p>{{/if}}
+                {{#if intro }}<p class="article-intro">{{#markdown}}{{ intro }}{{/markdown}}</p>{{/if}}
                 {{{ contents }}}
 
             </article>

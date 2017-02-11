@@ -19,11 +19,6 @@ const mergeCollections = require('./plugins/merge-collections.js');
 const filterStylusPartials = require('./plugins/filter-stylus-partials.js');
 const cssshrink = require('./plugins/cssshrink.js');
 
-// Handlebars helpers
-const startswith = require('./helper/startswith.js');
-const strftime = require('./helper/strftime.js');
-const equals = require('./helper/equals.js');
-
 
 function build () {
 
@@ -85,9 +80,10 @@ function build () {
             engine: 'handlebars',
             partials: 'layouts/partials',
             helpers: {
-                startswith,
-                strftime,
-                equals
+                markdown   : require('./helper/markdown.js'),
+                startswith : require('./helper/startswith.js'),
+                strftime   : require('./helper/strftime.js'),
+                equals     : require('./helper/equals.js')
             }
         }))
         .build((err) => {

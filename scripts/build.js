@@ -17,7 +17,7 @@ const stylus = require('metalsmith-stylus');
 const externalCollections = require('./plugins/external-collections.js');
 const mergeCollections = require('./plugins/merge-collections.js');
 const filterStylusPartials = require('./plugins/filter-stylus-partials.js');
-const cssshrink = require('./plugins/cssshrink.js');
+const cssnano = require('./plugins/cssnano.js');
 
 
 function build () {
@@ -42,7 +42,7 @@ function build () {
             compress: true,
             use: [autoprefixer()]
         }))
-        .use(cssshrink([
+        .use(cssnano([
             'static/css/styles.css',
             'static/css/article.css'
         ]))

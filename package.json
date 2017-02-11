@@ -5,10 +5,9 @@
   "scripts": {
     "build": "./scripts/build.js",
     "serve": "./scripts/serve.js",
-    "inline": "./scripts/inline.sh",
     "talks": "rsync -avz --exclude '/.git*' --exclude '/index.html' talks/ build/talks",
     "rsync": "rsync -avze 'ssh' --exclude '.DS_Store' --delete build/ aogami@arcturus.uberspace.de:/var/www/virtual/aogami/frederic-hemberger.de/",
-    "deploy": "npm run build; npm run inline; npm run talks; npm run rsync"
+    "deploy": "npm run build; npm run talks; npm run rsync"
   },
   "dependencies": {
     "autoprefixer-stylus": "^0.13.0",

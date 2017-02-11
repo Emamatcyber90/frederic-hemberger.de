@@ -15,10 +15,11 @@ const permalinks = require('metalsmith-permalinks');
 const stylus = require('metalsmith-stylus');
 
 // Custome metalsmith plugins
-const externalCollections = require('./plugins/external-collections.js');
-const mergeCollections = require('./plugins/merge-collections.js');
-const filterStylusPartials = require('./plugins/filter-stylus-partials.js');
 const cssnano = require('./plugins/cssnano.js');
+const externalCollections = require('./plugins/external-collections.js');
+const filterStylusPartials = require('./plugins/filter-stylus-partials.js');
+const inlineBaseCss = require('./plugins/inline-base-css.js');
+const mergeCollections = require('./plugins/merge-collections.js');
 
 
 function build () {
@@ -87,6 +88,7 @@ function build () {
                 equals     : require('./helper/equals.js')
             }
         }))
+        .use(inlineBaseCss())
         .use(brotli())
         .build((err) => {
 

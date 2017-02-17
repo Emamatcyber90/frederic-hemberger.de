@@ -38,16 +38,6 @@ function build () {
             thoughts : { pattern: 'thoughts/*.md', refer: false, sortby: 'date', reverse: true }
         }))
         .use(markdown({ langPrefix: 'language-' }))
-        .use(prism())
-        .use(filterStylusPartials())
-        .use(stylus({
-            compress: true,
-            use: [autoprefixer()]
-        }))
-        .use(cssnano([
-            'static/css/styles.css',
-            'static/css/article.css'
-        ]))
         .use(permalinks({
             pattern: ':collection/:title',
             relative: false,
@@ -65,19 +55,41 @@ function build () {
             'talks'             : `${process.cwd()}/data/talks.yaml`
         }))
         .use(mergeCollections(['articles', 'articles_external'], 'articles'))
-        .use(mergeCollections(['articles', 'articles_external', 'podcasts', 'talks', 'thoughts'], 'all'))
+        .use(mergeCollections(['articles', 'podcasts', 'talks', 'thoughts'], 'all'))
         .use(feed({
             collection: 'talks',
             destination: 'feeds/talks.rss'
         }))
         .use(feed({
             collection: 'all',
-            destination: 'feeds/feed.rss'
+            destination: 'feeds/feed.rss',
+            preprocess: (itemData) => {
+
+                // Decode HTML entities in "title"
+                itemData.title = itemData.title.replace(/&lt;head&gt;/, '»head«');
+
+                if (itemData.description) {
+                    itemData.description = itemData.description.toString('utf8')
+                        .replace(/\/static\//g, 'https://frederic-hemberger.de/static/')
+                }
+
+                return itemData;
+            }
         }))
         // .use(feed({
         //   collection: 'thoughts',
         //   destination: 'feeds/thoughts.rss'
         // }))
+        .use(prism())
+        .use(filterStylusPartials())
+        .use(stylus({
+            compress: true,
+            use: [autoprefixer()]
+        }))
+        .use(cssnano([
+            'static/css/styles.css',
+            'static/css/article.css'
+        ]))
         .use(layouts({
             engine: 'handlebars',
             partials: 'layouts/partials',

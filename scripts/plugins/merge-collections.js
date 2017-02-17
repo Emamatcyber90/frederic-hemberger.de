@@ -1,18 +1,17 @@
 'use strict';
 
-
 module.exports = function mergeCollections (sources, destination) {
 
     if (!Array.isArray(sources)) { sources = [sources]; }
 
     return function (files, metalsmith, done) {
 
-        let metadata = metalsmith.metadata();
+        const metadata = metalsmith.metadata();
         metadata.collections[destination] = sources
-            .map(function (source) { return metadata.collections[source]; })
-            .filter(function (source) { return source; })
-            .reduce(function (previousValue, currentValue) { return previousValue.concat(currentValue); })
-            .sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
+            .map((source) => metadata.collections[source])
+            .filter((source) => source)
+            .reduce((previousValue, currentValue) => previousValue.concat(currentValue))
+            .sort((a, b) => new Date(b.date) - new Date(a.date));
 
         done();
     };

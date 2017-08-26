@@ -193,7 +193,7 @@ AddDefaultCharset utf-8
 
     # Public Key Pinning
     # @see https://developer.mozilla.org/en-US/docs/Web/Security/Public_Key_Pinning
-    Header always set Public-Key-Pins "pin-sha256=\"wY/Zorlk1aezqT5coVNiFdy2l9UGawrSi73/fxsuqBc=\"; max-age=5184000"
+    # Header always set Public-Key-Pins "pin-sha256=\"wY/Zorlk1aezqT5coVNiFdy2l9UGawrSi73/fxsuqBc=\"; max-age=5184000"
 
     <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcf|vtt|webapp|web[mp]|woff2?|xml|xpi)$">
         Header unset X-Frame-Options
@@ -254,7 +254,7 @@ FileETag None
     # Redirect to single language
     RewriteRule ^datenschutz.html https://frederic-hemberger.de/privacy.html [R=301,L]
     RewriteRule ^en/(.*) https://frederic-hemberger.de/$1 [R=301,L]
-    RewriteRule ^atom.xml https://frederic-hemberger.de/feed/feed.xml [R=301,L]
+    RewriteRule ^atom.xml https://frederic-hemberger.de/feed/feed.rss [R=301,L]
 
     # Redirect webmaster tools tokens
     RewriteRule ^((Bing|LiveSearch)SiteAuth.xml|google4a87de449d12c95e.html|y_key_e7d81a0e799c3bc2.html)$ https://frederic-hemberger.de/static/webmaster/$1 [L]

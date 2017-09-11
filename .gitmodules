@@ -1,3 +1,0 @@
-[submodule "src/talks"]
-	path = talks
-	url = https://github.com/fhemberger/talks.git

@@ -61,7 +61,7 @@
   path: https://frederic-hemberger.de/talks/concat-websecurity/
   links:
       'Slides': https://frederic-hemberger.de/talks/concat-websecurity/
-      "Resources": http://fhember.gr/websecurity-resources
+      "Resources": https://github.com/fhemberger/talks/tree/master/websecurity
   held:
     - { date: '2015-03-07', event: '<a href="http://conc.at">.concat() 2015</a>, Salzburg' }
 

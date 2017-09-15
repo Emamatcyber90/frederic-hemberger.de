@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://www.frederic-hemberger.de">
 
     <link rel="prefetch" href="/static/js/webfontloader.js">
-    <link rel="prefetch" href="https://www.frederic-hemberger.de/piwik/piwik.js">
 
     <meta name="author" content="Frederic Hemberger">
     <meta name="robots" content="{{#if robots}}{{ robots }}{{else}}index, follow, noodp{{/if}}">
@@ -24,11 +23,6 @@
 
     <script>
     var WebFontConfig = { google: { families: ['Source Sans Pro:300,400'] } };
-    var _paq = _paq || [];
-    if (window.location.hostname === 'frederic-hemberger.de') {
-
-        _paq.push({{#if piwik}}{{{piwik}}},{{/if}}['trackPageView'],['enableLinkTracking'],['setTrackerUrl', 'https://www.frederic-hemberger.de/piwik/piwik.php'],['setSiteId', '1']);
-    }
     </script>
     <link rel="stylesheet" href="/static/css/styles.css" media="all">
 </head>

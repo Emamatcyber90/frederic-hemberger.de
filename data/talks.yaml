@@ -25,6 +25,7 @@
   held:
     - { date: '2016-10-23', event: '<a href="https://duesseldorf.devfest.de/">GDG DevFest</a>, Düsseldorf' }
     - { date: '2017-03-08', event: '<a href="https://www.meetup.com/de-DE/PottJS/">Pott.js</a>, Essen' }
+    - { date: '2017-09-13', event: '<a href="https://www.meetup.com/IT-Security-Kassel-und-Nordhessen/">IT-Security Meetup</a>, Kassel' }
 -
   lang: en
   title: Don't cross the sites!

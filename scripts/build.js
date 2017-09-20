@@ -14,7 +14,7 @@ const prism = require('metalsmith-prism');
 const permalinks = require('metalsmith-permalinks');
 const stylus = require('metalsmith-stylus');
 
-// Custome metalsmith plugins
+// Custom metalsmith plugins
 const cssnano = require('./plugins/cssnano.js');
 const externalCollections = require('./plugins/external-collections.js');
 const filterStylusPartials = require('./plugins/filter-stylus-partials.js');

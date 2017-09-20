@@ -1,0 +1,19 @@
+/en/articles/grunt-buildtool-for-frontend-projects/       /articles/grunt-a-build-tool-for-front-end-projects/
+/en/articles/grunt-a-buildtool-for-frontend-projects/     /articles/grunt-a-build-tool-for-front-end-projects/
+/articles/grunt-buildtool-for-frontend-projects/          /articles/grunt-a-build-tool-for-front-end-projects/
+/articles/grunt-a-buildtool-for-frontend-projects/        /articles/grunt-a-build-tool-for-front-end-projects/
+/artikel/grunt-buildtool-for-frontend-projects/           /articles/grunt-a-build-tool-for-front-end-projects/
+/artikel/grunt-a-buildtool-for-frontend-projects/         /articles/grunt-a-build-tool-for-front-end-projects/
+
+/artikel/track-calls-to-your-nodejs-api-with-piwik/       /articles/track-calls-to-your-nodejs-api-with-piwik/
+/en/articles/track-calls-to-your-nodejs-api-with-piwik/   /articles/track-calls-to-your-nodejs-api-with-piwik/
+/artikel/track-deployments-with-piwik-annotation-api/     /articles/track-deployments-with-piwiks-annotation-api/
+/en/articles/track-deployments-with-piwik-annotation-api/ /articles/track-deployments-with-piwiks-annotation-api/
+
+/artikel/talk-*                                           /talks/:splat
+/artikel/archiv/                                          /articles/
+
+/feed                                                     /feeds/feed.rss
+/atom.xml                                                 /feeds/feed.rss
+
+/en/*                                                     /:splat

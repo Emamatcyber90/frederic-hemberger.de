@@ -9,7 +9,8 @@
     "serve": "./scripts/serve.js",
     "talks": "rsync -qavz --exclude '/.git*' --exclude '/index.html' talks/ build/talks",
     "rsync": "rsync -qavze 'ssh' --exclude '.DS_Store' --delete build/ aogami@arcturus.uberspace.de:/var/www/virtual/aogami/frederic-hemberger.de/",
-    "deploy": "for s in build update talks rsync; do npm run $s; done"
+    "deploy": "for s in build update talks rsync; do npm run $s; done",
+    "netlify": "for s in build update talks; do npm run $s; done"
   },
   "dependencies": {
     "autoprefixer-stylus": "^0.14.0",

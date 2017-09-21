@@ -1,18 +1,21 @@
 /*
-  X-Content-Type-Options: nosniff
-
-/*.html
-  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' https://code.jquery.com/; frame-src https://frederic-hemberger.de/;
+  Content-Security-Policy: script-src 'none';
   Strict-Transport-Security: max-age=16070400
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+
+/talks/*
+  Content-Security-Policy: script-src 'self' 'unsafe-inline' https://code.jquery.com/ https://*.cloudfront.net/; frame-src https://frederic-hemberger.de/;
+  Strict-Transport-Security: max-age=16070400
+  X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
 
 /talks/froscon-xss/*
-  Content-Security-Policy: default-src *;
-  X-Frame-Options: ALLOW
+  Content-Security-Policy: default-src 'unsafe-inline' 'unsafe-eval' *;
   X-XSS-Protection: 0
 
 /talks/web-security/*
-  Content-Security-Policy: default-src *;
-  X-Frame-Options: ALLOW
+  Content-Security-Policy: default-src 'unsafe-inline' 'unsafe-eval' *;
   X-XSS-Protection: 0

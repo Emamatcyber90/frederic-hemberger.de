@@ -11,7 +11,7 @@
 /en/articles/track-deployments-with-piwik-annotation-api/ /articles/track-deployments-with-piwiks-annotation-api/
 
 /artikel/talk-*                                           /talks/:splat
-/artikel/archiv/                                          /articles/
+/artikel/*                                                /articles/
 
 /feed                                                     /feeds/feed.rss
 /atom.xml                                                 /feeds/feed.rss

@@ -1,5 +1,6 @@
 /*
   Content-Security-Policy: script-src 'none';
+  Referrer-Policy: no-referrer-when-downgrade
   Strict-Transport-Security: max-age=16070400
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN

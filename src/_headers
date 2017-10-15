@@ -19,3 +19,6 @@
 /talks/web-security/*
   Content-Security-Policy: default-src 'unsafe-inline' 'unsafe-eval' *;
   X-XSS-Protection: 0
+
+/static/apple-touch-icon.png
+  Cache-Control: public, max-age=16070400, must-revalidate

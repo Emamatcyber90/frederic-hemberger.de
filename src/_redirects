@@ -1,3 +1,7 @@
+http://frederic-hemberger.de/*                            https://frederic-hemberger.de/:splat
+http://www.frederic-hemberger.de/*                        https://frederic-hemberger.de/:splat
+https://www.frederic-hemberger.de/*                       https://frederic-hemberger.de/:splat
+
 /en/articles/grunt-buildtool-for-frontend-projects/       /articles/grunt-a-build-tool-for-front-end-projects/
 /en/articles/grunt-a-buildtool-for-frontend-projects/     /articles/grunt-a-build-tool-for-front-end-projects/
 /articles/grunt-buildtool-for-frontend-projects/          /articles/grunt-a-build-tool-for-front-end-projects/

@@ -13,6 +13,7 @@ const markdown = require('metalsmith-markdown');
 const prism = require('metalsmith-prism');
 const permalinks = require('metalsmith-permalinks');
 const stylus = require('metalsmith-stylus');
+const htmlMinifier = require('metalsmith-html-minifier');
 
 // Custom metalsmith plugins
 const cssnano = require('./plugins/cssnano.js');
@@ -101,6 +102,7 @@ function build () {
             }
         }))
         .use(inlineBaseCss())
+        .use(htmlMinifier())
         .use(brotli())
         .build((err) => {
 

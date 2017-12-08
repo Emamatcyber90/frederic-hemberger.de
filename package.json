@@ -19,7 +19,6 @@
     "js-yaml": "^3.10.0",
     "marked": "^0.3.6",
     "metalsmith": "^2.3.0",
-    "metalsmith-brotli": "^1.1.0",
     "metalsmith-collections": "^0.9.0",
     "metalsmith-feed": "0.4.0",
     "metalsmith-html-minifier": "^2.4.4",

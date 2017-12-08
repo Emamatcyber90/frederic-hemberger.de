@@ -5,7 +5,6 @@ const Path = require('path');
 const Metalsmith = require('metalsmith');
 
 const autoprefixer = require('autoprefixer-stylus');
-const brotli = require('metalsmith-brotli');
 const collections = require('metalsmith-collections');
 const feed = require('metalsmith-feed');
 const layouts = require('metalsmith-layouts');
@@ -103,7 +102,6 @@ function build () {
         }))
         .use(inlineBaseCss())
         .use(htmlMinifier())
-        .use(brotli())
         .build((err) => {
 
             if (err) { throw err; }

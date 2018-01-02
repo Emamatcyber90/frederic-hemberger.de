@@ -7,6 +7,7 @@
 
 html
     box-sizing border-box
+    padding 1em
 
     font-size 20px
     line-height 1.5
@@ -15,16 +16,13 @@ html
     background #fff
     color #000
 
+    -webkit-text-size-adjust 100%
+    -ms-text-size-adjust 100%
+
     @media screen and (max-width $mobile-width)
         font-size 16px
 
-    @media screen and (max-width $body-max-width)
-        margin 0 1em
-
 body
-    > header
-        color $darkgray
-
     > footer
         margin-top 5em
         margin-bottom 2em
@@ -38,10 +36,23 @@ h3,
 h4,
 h5
     font-weight normal
+    margin-bottom .5em
     color $red
 
     a
         color inherit
+
+h1
+    font-size 2.0em
+    margin-bottom 0
+
+h2
+    font-size 1.5em
+    margin-top 1.5em
+
+h3
+    margin-top 1em
+
 
 a,
 a:link,
@@ -74,7 +85,6 @@ strong.normal
 .home-intro
     margin-top 140px
     font-size 1.9rem // = 38px
-    line-height 1.2
 
     @media screen and (max-width $mobile-width)
         font-size 1.5rem // = 30px
@@ -82,15 +92,13 @@ strong.normal
 
     h1
         font-size inherit
-        margin-bottom 15px
-
-        & + p
-            margin-top 0
-            font-size inherit
+        margin-bottom: 1em;
 
     p
         font-size 1.5rem // = 30px
 
     span
-        color $lightgray
+        color $darkgray
         display block
+        font-weight 300
+        line-height 1.2

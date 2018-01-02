@@ -1,3 +1,8 @@
+slash($right-padding = 0.1em)
+    content '/'
+    padding 0 $right-padding 0 .3em
+    color $lightgray
+
 .list-divider-slash
     margin 0
     padding 0
@@ -5,12 +10,12 @@
     li
         display inline-block
 
-        + li:before
-            content '/'
-            padding 0 .3em 0 .1em
-            color $lightgray
+        &:after
+            slash(.3em)
 
-.text-divider-slash + .text-divider-slash:before
-    content '/'
-    padding 0 .3em 0 .1em
-    color $lightgray
+        &:last-child:after
+            content ''
+
+.text-divider-slash:after
+    slash()
+

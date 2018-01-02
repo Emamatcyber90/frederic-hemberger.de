@@ -2,8 +2,6 @@
 layout: index.hbs
 ---
 
-# Frederic Hemberger
-Freelance Web-Developer & Consultant
-
-Focusing on JavaScript, Node.js & web front-end.
-Interested in web-security, software architecture, DevOps, microservices, Docker, performance, accessibility.
+I accompany clients during digital transformation processes,
+develop strategies by trying to ask the right questions,
+build systems and automate workflows to meet these goals.

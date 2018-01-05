@@ -15,23 +15,23 @@
   "dependencies": {
     "autoprefixer-stylus": "^0.14.0",
     "cssnano": "^3.10.0",
-    "handlebars": "^4.0.10",
+    "handlebars": "^4.0.11",
     "js-yaml": "^3.10.0",
-    "marked": "^0.3.6",
+    "marked": "^0.3.9",
     "metalsmith": "^2.3.0",
     "metalsmith-collections": "^0.9.0",
-    "metalsmith-feed": "0.4.0",
-    "metalsmith-html-minifier": "^2.4.4",
+    "metalsmith-feed": "^0.5.0",
+    "metalsmith-html-minifier": "^3.0.0",
     "metalsmith-layouts": "^1.8.1",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-metadata": "0.0.4",
     "metalsmith-permalinks": "simbo/metalsmith-permalinks",
-    "metalsmith-prism": "^3.1.0",
+    "metalsmith-prism": "^3.1.1",
     "metalsmith-stylus": "^3.0.0",
     "strftime": "^0.10.0"
   },
   "devDependencies": {
-    "chokidar": "^1.7.0",
-    "st": "^1.2.0"
+    "chokidar": "^2.0.0",
+    "st": "^1.2.2"
   }
 }

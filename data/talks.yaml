@@ -93,7 +93,7 @@
   path: https://frederic-hemberger.de/talks/login-failed--authentication-and-ux/
   links:
     'Slides': https://frederic-hemberger.de/talks/login-failed--authentication-and-ux/
-    'Video from Fronteers Jam Session 2014 (shortened version)': https://vimeo.com/113493698
+    'Video (short version)': https://vimeo.com/113493698
   held:
     - { date: '2014-09-11', event: '<a href="http://webworker-nrw.de/">Webworker NRW</a>, Düsseldorf' }
     - { date: '2014-10-08', event: '<a href="https://fronteers.nl/congres/2014/jam-session">Fronteers Jam Session</a>, Amsterdam' }
@@ -136,7 +136,7 @@
   path: https://frederic-hemberger.de/talks/nodejs-in-production/
   links:
     'Slides': https://frederic-hemberger.de/talks/nodejs-in-production/
-    'Links to all mentioned tools and resources': https://github.com/fhemberger/talks/blob/master/nodejs-in-production/README.md
+    'Links': https://github.com/fhemberger/talks/blob/master/nodejs-in-production/README.md
   held:
     - { date: '2014-04-08', event: '<a href="http://colognejs.de">Cologne.js</a>, Cologne' }
     - { date: '2014-04-26', event: '<a href="http://2014.jsunconf.eu/">JS Unconf 2014</a>, Hamburg' }

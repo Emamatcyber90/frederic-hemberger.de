@@ -4,6 +4,7 @@
 @import '_navigation'
 @import '_lists'
 @import '_article-overview'
+@import '_project-overview'
 
 html
     box-sizing border-box
@@ -67,6 +68,23 @@ a:active,
 a.active
     color $darkblue
 
+a.button
+    display inline-block
+    margin .25em 0
+    padding .5em 0.75em
+
+    font-size 1.2em
+    line-height 1
+    text-align center
+    white-space nowrap
+    vertical-align baseline
+
+    border-radius .125rem
+    background-color hsl(346, 84%, 48%)
+    background-image linear-gradient(180deg, hsl(346, 84%, 48%), hsl(331, 84%, 48%))
+    box-shadow 0 0 1px hsla(346, 84%, 34%, 1)
+    color inherit
+
 hr
     border 1px solid $lightgray
     border-bottom transparent
@@ -92,7 +110,7 @@ strong.normal
 
     h1
         font-size inherit
-        margin-bottom: 1em;
+        margin-bottom 1em
 
     p
         font-size 1.5rem // = 30px
@@ -102,3 +120,4 @@ strong.normal
         display block
         font-weight 300
         line-height 1.2
+

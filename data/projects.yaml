@@ -1,0 +1,85 @@
+-
+  project: Digital transition from a classic enterprise environment to the cloud
+  time:
+    from: 03/2017
+    to: 09/2017
+  description: >
+    How do you go from »release every couple of months« – still quite common in many large organizations – to much shorter iterations?
+    And all while adopting cloud infrastructure as part of your IT stack?
+
+    I helped designing and implementing best-practices for team-managed build pipelines and cluster resources on top of Kubernetes and AWS.
+    They empower teams to work on their own release schedule, while updates and security fixes are automatically deployed from a central source.
+  tasks:
+    - Consulting regarding cloud setup and CI/CD pipeline
+    - Software architecture and implementation
+    - Microservice development
+  techstack:
+    - AWS
+    - Ansible
+    - Docker
+    - Jenkins
+    - Kubernetes
+    - Node.js
+    - Prometheus
+-
+  project: Migrating existing applications and services onto Kubernetes
+  time:
+    from: 11/2016
+    to: 02/2017
+  description: >
+    Managing a heterogeneous environment of microservices on AWS with an raising number of applications was becoming increasingly uncomfortable
+    for the client’s devops team. Parts of the stack were using different deployment pipelines and instrumentation. We gradually replaced the
+    setup with Kubernetes, which gave us a better saturation of hardware resources and greatly improved observability and scalability.
+
+    The new standardized build setup also helped us to create and deploy services more reliably.
+  tasks:
+    - Creation of a continuous integration / deployment workflow
+    - Revision of the container-based infrastructure
+    - Migration of existing applications to Kubernetes clusters
+    - Development of internal DevOps tools
+  techstack:
+    - AWS
+    - Docker
+    - ELK stack
+    - Kubernetes
+-
+  project: Creating of an international aviation B2B marketplace
+  time:
+    from: 03/2015
+    to: 11/2016
+  description: >
+    This was one of the rare opportunities to create an innovative new product completely from scratch. Analyzing typical (still mostly analog) workflows in
+    air cargo sector and creating a unique B2B marketplace for optimizing cargo routes and avoiding empty leg flights. Offering easy flight and cargo
+    management for airline brokers to help them with their daily work.
+  tasks:
+    - Technical concept, product and feature development
+    - Software architecture and implementation
+    - Setup of Continuous Deployment pipeline and initial monitoring
+  techstack:
+    - AWS
+    - Docker
+    - ELK stack
+    - Grafana
+    - hapi.js
+    - InfluxDB
+    - MongoDB
+    - Node.js
+-
+  project: Turning a big fashion online store from monolith to microservice
+  time:
+    from: 05/2014
+    to: 12/2014
+  description: >
+    Having a monolithic, highly customized online store makes it hard to adapt quickly to new business needs. Changes often took weeks to implement and
+    test because of the complex code base. Carefully, we singled out parts which could be turned into independent Node.js microservices.
+    All of the customer facing web frontend was rewritten as modular and responsive code as well.
+  tasks:
+    - Frontend/backend development
+    - RESTful API development
+    - Web performance and image optimization
+    - Consulting
+  techstack:
+    - Express
+    - hapi.js
+    - MongoDB
+    - Node.js

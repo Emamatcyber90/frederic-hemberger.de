@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> html-head }}
+
+<body>
+    {{> header }}
+
+    <main>
+        <div class="container">
+            {{{ contents }}}
+
+            <h2>Recent projects</h2>
+            <ul class="project-list">
+                {{#each collections.projects}}
+                    {{> project-listing-detail }}
+                {{/each}}
+            </ul>
+
+        </div>
+    </main>
+
+    {{> footer }}
+</body>
+
+</html>

@@ -52,6 +52,7 @@ function build () {
         .use(externalCollections({
             'articles_external' : `${process.cwd()}/data/articles_external.yaml`,
             'podcasts'          : `${process.cwd()}/data/podcasts.yaml`,
+            'projects'          : `${process.cwd()}/data/projects.yaml`,
             'talks'             : `${process.cwd()}/data/talks.yaml`
         }))
         .use(mergeCollections(['articles', 'articles_external'], 'articles'))

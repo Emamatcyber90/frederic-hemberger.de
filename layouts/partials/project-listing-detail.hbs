@@ -1,0 +1,20 @@
+<li class="project">
+    <div class="project-header">
+        <h3>{{ project }} <span><time>{{ time.from }}</time>–<time>{{ time.to }}</time></span></h3>
+        <p>{{#markdown}}{{ description }}{{/markdown}}</p>
+    </div>
+
+    <div class="project-tasks">
+        <ul>
+            {{#each tasks}}
+                <li>{{ . }}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <ul class="project-techstack">
+        {{#each techstack}}
+            <li>{{ . }}</li>
+        {{/each}}
+    </ul>
+</li>

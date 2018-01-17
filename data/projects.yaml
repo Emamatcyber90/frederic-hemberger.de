@@ -17,9 +17,12 @@
     - AWS
     - Ansible
     - Docker
+    - hapi.js
+    - Helm
     - Jenkins
     - Kubernetes
     - Node.js
+    - MongoDB
     - Prometheus
 -
   project: Migrating existing applications and services onto Kubernetes
@@ -39,6 +42,7 @@
     - Development of internal DevOps tools
   techstack:
     - AWS
+    - Codeship
     - Docker
     - ELK stack
     - Kubernetes
@@ -57,6 +61,7 @@
     - Setup of Continuous Deployment pipeline and initial monitoring
   techstack:
     - AWS
+    - CircleCI
     - Docker
     - ELK stack
     - Grafana
@@ -64,6 +69,7 @@
     - InfluxDB
     - MongoDB
     - Node.js
+    - Rancher
 -
   project: Turning a big fashion online store from monolith to microservice
   time:
@@ -79,6 +85,7 @@
     - Web performance and image optimization
     - Consulting
   techstack:
+    - CircleCI
     - Express
     - hapi.js
     - MongoDB

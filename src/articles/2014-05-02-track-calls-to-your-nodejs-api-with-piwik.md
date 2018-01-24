@@ -4,13 +4,13 @@ lang: en
 deck: Piwik Analytics
 title: Track calls to your Node.js API with Piwik
 intro: >
-    When using Piwik for analytics, sometimes you don't want to track only your website’s visitors. Especially as modern web services usually offer RESTful APIs, why not use Piwik to track those requests as well? It really gives you a more accurate view on how users interact with your services: In which ways do your clients use your APIs compared to your website? Which of your services are used the most? And what kind of tools are consuming your API?
+    When using Piwik for analytics, sometimes you don’t want to track only your website’s visitors. Especially as modern web services usually offer RESTful APIs, why not use Piwik to track those requests as well? It really gives you a more accurate view on how users interact with your services: In which ways do your clients use your APIs compared to your website? Which of your services are used the most? And what kind of tools are consuming your API?
 date: 2014-05-02
 ---
 
 *This article was originally written for the [Piwik Analytics Blog](http://piwik.org/blog/).*
 
-With Node.js as your application platform, you can simply use [piwik-tracker](https://github.com/fhemberger/piwik-tracker), a lightweight wrapper for Piwik's own Tracking HTTP API, which helps you getting your API calls into Piwik Analytics.
+With Node.js as your application platform, you can simply use [piwik-tracker](https://github.com/fhemberger/piwik-tracker), a lightweight wrapper for Piwik’s own Tracking HTTP API, which helps you getting your API calls into Piwik Analytics.
 
 First, start with installing `piwik-tracker` as a dependency for your project:
 
@@ -34,7 +34,7 @@ piwik.track(baseUrl + req.url);
 ```
 
 
-Of cause you can do more than only tracking simple URLs: All parameters offered by [Piwik’s Tracking HTTP API Reference](http://developer.piwik.org/api-reference/tracking-api) are supported, this also includes custom variables. During Piwik API calls, those are referenced as JSON string, so for better readability, you should use `JSON.stringify({})` instead of manual encoding.
+Of course you can do more than only tracking simple URLs: All parameters offered by [Piwik’s Tracking HTTP API Reference](http://developer.piwik.org/api-reference/tracking-api) are supported, this also includes custom variables. During Piwik API calls, those are referenced as JSON string, so for better readability, you should use `JSON.stringify({})` instead of manual encoding.
 
 ```javascript
 piwik.track({
@@ -58,7 +58,7 @@ piwik.track({
 
 As you can see, you can pass along arbitrary fields of a Node.js [request object](http://nodejs.org/api/http.html#http_http_incomingmessage) like HTTP header fields, status code or request method (GET, POST, PUT, etc.) as well. That should already cover most of your needs.
 
-But so far, all requests have been tracked with the IP/hostname of your Node.js application. If you also want the API user's IP to show up in your analytics data, you have to override Piwik’s default setting, which requires your secret Piwik token:
+But so far, all requests have been tracked with the IP/hostname of your Node.js application. If you also want the API user’s IP to show up in your analytics data, you have to override Piwik’s default setting, which requires your secret Piwik token:
 
 ```javascript
 function getRemoteAddr(req) {
@@ -77,7 +77,7 @@ piwik.track({
 ```
 
 
-As we have now collected all the values that we wanted to track, we're basically done. But if you're using Express or restify for your backend, we can still go one step further and put all of this together into a custom middleware, which makes tracking requests even easier.
+As we have now collected all the values that we wanted to track, we’re basically done. But if you’re using Express or restify for your backend, we can still go one step further and put all of this together into a custom middleware, which makes tracking requests even easier.
 
 First we start off with the basic code of our new middleware and save it as `lib/express-piwik-tracker.js`:
 

@@ -3,8 +3,8 @@ layout: post.hbs
 lang: en
 deck: Kubernetes
 title: Manage Kubernetes secrets with SOPS
-intro: > 
-    Secrets in Kubernetes are strings encoded in Base64, to avoid having to escape special characters in YAML files, but Base64 is by no means a way to store them securely. While there are tools like [Hashicorp's Vault](https://www.vaultproject.io/) to encrypt and decrypt secrets, they have a steep learning curve for beginners and can lead to unnecessary complexity, especially in the beginning of a project. An easy alternative to get started can be Mozilla's CLI tool »SOPS«.
+intro: >
+    Secrets in Kubernetes are strings encoded in Base64, to avoid having to escape special characters in YAML files, but Base64 is by no means a way to store them securely. While there are tools like [Hashicorp’s Vault](https://www.vaultproject.io/) to encrypt and decrypt secrets, they have a steep learning curve for beginners and can lead to unnecessary complexity, especially in the beginning of a project. An easy alternative to get started can be Mozilla’s CLI tool »SOPS«.
 date: 2017-02-16
 ---
 
@@ -26,13 +26,13 @@ data:
 
 The secret is encoded as Base64 string using `echo -n "value" | base64 -`.
 
-If you are using Amazon Web Services, it's convenient to use their Key Management Service (KMS) to encrypt the file, as you can restrict access to dedicated users or roles. To use SOPS with a KMS key, run:
+If you are using Amazon Web Services, it’s convenient to use their Key Management Service (KMS) to encrypt the file, as you can restrict access to dedicated users or roles. To use SOPS with a KMS key, run:
 
 ```bash
 sops --kms="<your kms key>" --encrypt mysecret.yaml > mysecret.sops.yaml
 ```
 
-SOPS walks through every key of the YAML file and encrypt its' value. The result will look like this:
+SOPS walks through every key of the YAML file and encrypt its’ value. The result will look like this:
 
 ```yaml
 apiVersion: ENC[AES256_GCM,data:Ww8=,iv:2hdl1qLqXUXV02NZgB0CL3iRIDPXRQo3Rh2EFkIedEw=,tag:czTAZAliyC7wWdhzsl9zNA==,type:str]
@@ -65,7 +65,7 @@ sops --decrypt mysecret.sops.yaml | kubectl apply -f -
 
 ## A step further
 
-The encoded example above is a bit noisy, as every YAML key is encrypted by default, not only those lines containing the actual secrets. While it's not perfect, you can add `_unencrypted` suffix to each key you don't want SOPS to encrpyt (e.g. `metadata_unencrypted`). Those keys and their child nodes will be ignored in the future. But this also requires a little additional step inbetween to get rid of those suffixes again, before pushing the secret to Kubernetes:
+The encoded example above is a bit noisy, as every YAML key is encrypted by default, not only those lines containing the actual secrets. While it’s not perfect, you can add `_unencrypted` suffix to each key you don’t want SOPS to encrpyt (e.g. `metadata_unencrypted`). Those keys and their child nodes will be ignored in the future. But this also requires a little additional step inbetween to get rid of those suffixes again, before pushing the secret to Kubernetes:
 
 ```bash
 sops --decrypt mysecret.sops.yaml | sed 's|_unencrypted||g' | kubectl apply -f -
@@ -74,4 +74,4 @@ sops --decrypt mysecret.sops.yaml | sed 's|_unencrypted||g' | kubectl apply -f -
 
 ## Conclusion
 
-SOPS gives you an easy way to store secrets securely in your Kubernetes YAML descriptions. It's fast and doesn't require any other dependencies. This makes it a solid starting point for your project before you may consider more complex secret management solutions.
+SOPS gives you an easy way to store secrets securely in your Kubernetes YAML descriptions. It’s fast and doesn’t require any other dependencies. This makes it a solid starting point for your project before you may consider more complex secret management solutions.

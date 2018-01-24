@@ -2,9 +2,9 @@
 layout: post.hbs
 lang: en
 deck: Piwik Analytics
-title: Track deployments with Piwik's Annotation API
+title: Track deployments with Piwik’s Annotation API
 description: >
-    With Piwik's Annotation API it's simple to annotate each of your deployments automatically, which helps you interpreting changes in your metrics
+    With Piwik’s Annotation API it’s simple to annotate each of your deployments automatically, which helps you interpreting changes in your metrics
 date: 2014-04-25
 ---
 
@@ -17,10 +17,10 @@ Piwik allows you to annotate your analytics data in your dashboard to provide ad
 Another important – but often neglected – metric is the time of each deployment of your website or application. It helps you interpreting certain changes in your analytics data, as each release usually introduces new features or fixes important bugs. And those changes might also reflect in your statistics:
 
 - »Our conversion rate improved by 10% since last week.« (»Yes, we rephrased our call to action message last Tuesday.«)
-- »I'm seeing a spike of 404 errors.« (»One of our product pages had a typo in a link. I' just fixed it a few minutes ago, the errors should be gone by now.«)
-- »Since our last deployment, the traffic decreased on our service page.« (»Ok, last deployment you said? Let's see what might have caused this …«)
+- »I’m seeing a spike of 404 errors.« (»One of our product pages had a typo in a link. I’ just fixed it a few minutes ago, the errors should be gone by now.«)
+- »Since our last deployment, the traffic decreased on our service page.« (»Ok, last deployment you said? Let’s see what might have caused this …«)
 
-Of cause, you can do this all yourself, but wouldn't it be great if all deployments were annotated automatically? Especially when you deploy your product often, it's easy to lose track of what change was introduced at which point of time. With Piwik's own Annotation API it's actually quite simple to run this task with each of your releases.
+Of course, you can do this all yourself, but wouldn’t it be great if all deployments were annotated automatically? Especially when you deploy your product often, it’s easy to lose track of what change was introduced at which point of time. With Piwik’s own Annotation API it’s actually quite simple to run this task with each of your releases.
 
 During your deployment, run the following script:
 
@@ -69,7 +69,7 @@ For best results, add the IDs of your related issue tracker tickets to your depl
 
 ## A word about security
 
-Make sure this script is not publicly accessible, as the API token works like a password to your entire Piwik installation. It's recommended to create an additional user with administrative access to just this very project you want to track. Also, if the request is sent over untrusted networks, we highly advise that you use a HTTPS request instead.
+Make sure this script is not publicly accessible, as the API token works like a password to your entire Piwik installation. It’s recommended to create an additional user with administrative access to just this very project you want to track. Also, if the request is sent over untrusted networks, we highly advise that you use a HTTPS request instead.
 
 
 ### References

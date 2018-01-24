@@ -6,6 +6,9 @@
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
 
+/feeds/*
+  Content-Type: application/rss+xml; charset=UTF-8
+
 /talks/*
   Content-Security-Policy: script-src 'self' 'unsafe-inline' https://code.jquery.com/ https://*.cloudfront.net/; frame-src https://frederic-hemberger.de/;
   Strict-Transport-Security: max-age=16070400

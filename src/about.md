@@ -1,5 +1,6 @@
 ---
 layout: about.hbs
+html_title: My work and recent projects
 ---
 
 ## Work

@@ -8,7 +8,9 @@ intro: >
 date: 2018-01-22
 ---
 
-To get started, we need Grafana 4.2 or above to be installed. For this tutorial, I'm using Docker to get the latest Grafana release running:
+To get started, we need Grafana 4.6 or above to be installed for the native annotation store. If you're using an older version, you can use the same technique and store your annotations in [InfluxDB](https://www.influxdata.com/), for example.
+
+For this tutorial, I'm using Docker to get the latest Grafana release running:
 
 ```bash
 docker run -d --name=grafana -p 3000:3000 grafana/grafana
@@ -73,3 +75,8 @@ This is what the final result looks like in Grafana:
 
 ![Grafana: Screenshot of the resulting annotation overlay window](/static/assets/article-grafana-deployment-annotation.png)
 
+<div class="highlight-box">
+**UPDATE:** At the moment, Grafana doesn’t limit the retention period for annotations. So if you plan to push *many* annotations, you may need to clean up Grafana’s internal SQLite storage from time to time or switch to InfluxDB as data source, which has a [configurable retention policy](https://docs.influxdata.com/influxdb/latest/query_language/database_management/#create-retention-policies-with-create-retention-policy).
+<br>
+— Thanks to [Thomas](https://twitter.com/IT_Supertramp/status/956202617931223043) for asking about it.
+</div>

@@ -5,9 +5,10 @@ html_title: My work and recent projects
 
 ## Work
 
-I wore many different hats in over 15 years of web development. This helps me to understand projects from various angles, find a common language and create better results.
+I wore many different hats in over 15 years on the Web, ranging from frontend and backend development to team lead and consultant. In this time I worked with both small and international clients from  different industries. This helps me to understand requirements from various angles, find a common language and create better results.
 
 By working on open-source projects like Node.js, I’m trying to improve the tools I use on a daily basis and give back to the community. That’s also why I regularly attend and [speak](/talks/) at conferences and local meet-ups.
+
 
 ## Skills
 

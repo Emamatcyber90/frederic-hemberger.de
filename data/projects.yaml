@@ -1,9 +1,30 @@
 -
+  project: Consulting and process optimization on various projects
+  time:
+    from: 01/2018
+    to: now
+  description: |
+    Optimizing existing workflows and general application setup improves product stability and eases the day-to-day work of development teams.
+    I helped various clients:
+  tasks:
+    - Dockerizing their applications for parallel testing in build pipelines
+    - Evaluating Kubernetes as foundation for a new PaaS
+    - Defining their infrastructure as code with Ansible
+    - Setting up monitoring with Prometheus
+  techstack:
+    - AWS
+    - Ansible
+    - Docker
+    - GitLab
+    - Helm
+    - Kubernetes
+    - Prometheus
+-
   project: Digital transition from a classic enterprise environment to the cloud
   time:
     from: 03/2017
     to: 09/2017
-  description: >
+  description: |
     How do you go from »release every couple of months« – still quite common in many large organizations – to much shorter iterations?
     And all while adopting cloud infrastructure as part of your IT stack?
 
@@ -29,7 +50,7 @@
   time:
     from: 11/2016
     to: 02/2017
-  description: >
+  description: |
     Managing a heterogeneous environment of microservices on AWS with an raising number of applications was becoming increasingly uncomfortable
     for the client’s devops team. Parts of the stack were using different deployment pipelines and instrumentation. We gradually replaced the
     setup with Kubernetes, which gave us a better saturation of hardware resources and greatly improved observability and scalability.
@@ -51,7 +72,7 @@
   time:
     from: 03/2015
     to: 11/2016
-  description: >
+  description: |
     This was one of the rare opportunities to create an innovative new product completely from scratch. Analyzing typical (still mostly analog) workflows in
     air cargo sector and creating a unique B2B marketplace for optimizing cargo routes and avoiding empty leg flights. Offering easy flight and cargo
     management for airline brokers to help them with their daily work.
@@ -75,7 +96,7 @@
   time:
     from: 05/2014
     to: 12/2014
-  description: >
+  description: |
     Having a monolithic, highly customized online store makes it hard to adapt quickly to new business needs. Changes often took weeks to implement and
     test because of the complex code base. Carefully, we singled out parts which could be turned into independent Node.js microservices.
     All of the customer facing web frontend was rewritten as modular and responsive code as well.

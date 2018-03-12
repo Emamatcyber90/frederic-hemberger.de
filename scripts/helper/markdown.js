@@ -13,6 +13,8 @@ module.exports = function markdown(config) {
   }
 
   function helper(context, options) {
+    if (!context) { return; }
+
     if (typeof context === 'string') {
       var opts = Object.assign({}, config, options);
       return marked(context, opts);

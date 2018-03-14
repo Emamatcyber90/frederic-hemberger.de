@@ -1,5 +1,24 @@
 -
   lang: en
+  title: Monitoring with Prometheus
+  date: 2018-03-15
+  intro: |
+    How to keep track of your applications at runtime has been an issue for developers
+    long before this whole "devops" became a thing.
+
+    This talk shows with a couple of small live demos what Prometheus is and what makes
+    it so interesting. You will learn how to easily collect and evaluate metrics
+    from servers and applications in minutes, what the difference between blackbox
+    and whitebox monitoring is, and how to send alerts to different recipients.
+  image:
+  path: https://github.com/fhemberger/talks/tree/master/websecurity
+  links:
+      'Resources': https://github.com/fhemberger/talks/tree/master/prometheus
+  held:
+    - { date: '2018-03-15', event: '<a href="https://www.meetup.com/de-DE/Bonner-Microservices-Meetup/">Bonner Microservices Meetup</a>, Bonn' }
+
+-
+  lang: en
   title: A quick introduction to Kubernetes
   date: 2017-02-09
   intro:

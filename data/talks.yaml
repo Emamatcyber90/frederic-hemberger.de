@@ -13,7 +13,7 @@
   lang: en
   title: There's no party like 3rd party – handle dependencies securely
   date: 2016-10-23
-  intro: >
+  intro: |
     Web developers use frameworks, libraries and 3rd-party services like analytics or
     advertising on a daily basis. But often we don't take the time to reflect how all
     those building blocks are affecting security. How can we take back control of what
@@ -30,10 +30,10 @@
   lang: en
   title: Don't cross the sites!
   date: 2015-08-22
-  intro: >
+  intro: |
     It's 2015 and Cross Site Scripting (XSS) attacks are still ranking high in OWASP's
     "Top Ten Security Risks".
-    <br>
+
     So what is this XSS and what harm it can do to your site? And more important: How can we
     prevent those kind of attacks on our websites? I'll talk about some of the bad advice
     (unfortunately being repeated on the web over and over again) and show you better,
@@ -49,12 +49,12 @@
   lang: en
   title: Developing a web-security mindset
   date: 2015-03-07
-  intro: >
+  intro: |
     Security is often the neglected step-child of web-development. It has the reputation of being
     hard and complex and in general to be someone else's problem. Too often it's addressed after
     the project launched - or shortly before it's supposed to go live (after all, you are supposed
     to write bug-free software, right?).
-    <br>
+
     In my talk I want to show you why it matters to bake security into your project right from the
     start, how to act responsibly concerning your users' data and how to develop a good
     understanding of fundamental security topics.
@@ -62,7 +62,7 @@
   path: https://frederic-hemberger.de/talks/concat-websecurity/
   links:
       'Slides': https://frederic-hemberger.de/talks/concat-websecurity/
-      "Resources": https://github.com/fhemberger/talks/tree/master/websecurity
+      'Resources': https://github.com/fhemberger/talks/tree/master/websecurity
   held:
     - { date: '2015-03-07', event: '<a href="http://conc.at">.concat() 2015</a>, Salzburg' }
 
@@ -70,7 +70,7 @@
   lang: en
   title: hapi – Building applications and services in Node.js
   date: 2015-02-10
-  intro: >
+  intro: |
     hapi is a framework for building web applications, services and RESTful APIs in Node.js.
     Besides being the core building block for Walmart's mobile platform, it also powers the new
     npm website and many others.
@@ -85,7 +85,7 @@
   lang: en
   title: Login failed. Retry? – Website authentication methods and UX
   date: 2014-09-11
-  intro: >
+  intro: |
     Website authentication can become quite peculiar at times, both from a technical and user
     experience view. Addressing some of the bad practices, I present a few suggestions to improve
     the situation and make it easier for your users to login with your site.
@@ -103,14 +103,14 @@
   lang: en
   title: Digital self-defense – Mitigate Clickjacking and XSS attacks with HTTP headers
   date: 2014-04-27
-  intro: >
+  intro: |
     Web security is for the most part an unloved stepchild for most developers, but in this talk
     I'll show you how at least two typical attack scenarios - clickjacking and injection of
     unwanted resources – can be mitigated with little effort and what Content-Security-Policy
     offers in modern browsers.
-    <br>
-    <em>(This is the English version of my talk "Digitale Selbstverteidigung", which I held
-    spontaneously at <a href="http://2014.jsunconf.eu/">JS Unconf 2014</a>.)</em>
+
+    _(English version of my talk "Digitale Selbstverteidigung", which I held
+    spontaneously at [JS Unconf 2014](http://2014.jsunconf.eu/).)_
   image: talk-web-security-en.jpg
   path: https://frederic-hemberger.de/talks/web-security/en.html
   links:
@@ -123,11 +123,11 @@
   lang: en
   title: Running Node.js apps in production
   date: 2014-04-26
-  intro: >
+  intro: |
     At <a href="http://2014.jsunconf.eu/">JS Unconf 2014</a> I talked about pros and cons of
     different deployment techniques for your Node.js application, what makes a good startup script
     and how to keep downtime to a minimum during deployment.
-    <br>
+
     The second part is about handling errors and exceptions without letting your entire application
     crash. Metrics and log files help you to understand, how your application behaves in production,
     but as grepping through tons logfiles can be cumbersome, I'll show you why Elasticsearch and
@@ -145,7 +145,7 @@
   lang: de
   title: Digitale Selbstverteidigung – Mehr Sicherheit auf der eigenen Website
   date: 2014-01-09
-  intro: >
+  intro: |
     Sicherheit von Webseiten wird von vielen Entwicklern – wenn überhaupt – meistens herumgereicht
     wie der Schwarze Peter. Bestenfalls soll sich jemand anderes darum kümmern. In diesem Talk
     zeige ich, wie sich zumindest zwei Angriffsszenarien – Clickjacking und Einschleusen
@@ -164,12 +164,12 @@
   lang: de
   title: Einführung in Require.js
   date: 2014-01-09
-  intro: >
+  intro: |
     JavaScript-Code in Websites und -applikationen wird immer umfangreicher, mit zunehmender
     Komplexität ist aber dieser Code deutlich schlechter zu warten: Codepflege in große Dateien
     ist unübersichtlich und führt schnell zu Fehlern. Ebenso müssen Abhängigkeiten einzelner Teile
     zueinander beachtet werden.
-    <br>
+
     Require.js bietet die Möglichkeit, Code sauber in kleine Module zu unterteilen und die jeweils
     benötigten Teilkomponenten in der richtigen Reihenfolge zu laden. So lässt sich der Code auch
     in möglichst kleinen Einheiten besser testen.
@@ -186,7 +186,7 @@
   lang: de
   title: Code-Organisation in JavaScript
   date: 2013-01-10
-  intro: >
+  intro: |
     Wie kann ich meinen JavaScript-Code sauber kapseln, damit es ungewünschte Überschneidungen mit
     anderen Scripten oder externen Bibliotheken gibt? Eine kurze Übersicht über Function Expressions,
     das Module-Pattern, Entkopplung von Komponenten mittels PubSub und wie sich Code modularisieren

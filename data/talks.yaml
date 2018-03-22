@@ -16,6 +16,7 @@
       'Resources': https://github.com/fhemberger/talks/tree/master/prometheus
   held:
     - { date: '2018-03-15', event: '<a href="https://www.meetup.com/de-DE/Bonner-Microservices-Meetup/">Bonner Microservices Meetup</a>, Bonn' }
+    - { date: '2018-03-21', event: '<a href="https://www.meetup.com/de-DE/devops-duesseldorf/">DevOps Düsseldorf</a>, Düsseldorf' }
 
 -
   lang: en

@@ -76,7 +76,7 @@ This is what the final result looks like in Grafana:
 ![Grafana: Screenshot of the resulting annotation overlay window](/static/assets/article-grafana-deployment-annotation.png)
 
 <div class="highlight-box">
-**UPDATE:** At the moment, Grafana doesn’t limit the retention period for annotations. So if you plan to push *many* annotations, you may need to clean up Grafana’s internal SQLite storage from time to time or switch to InfluxDB as data source, which has a [configurable retention policy](https://docs.influxdata.com/influxdb/latest/query_language/database_management/#create-retention-policies-with-create-retention-policy).
+**UPDATE:** At the time of writing, Grafana doesn’t limit the retention period for annotations. So if you plan to push *many* annotations, you may need to clean up Grafana’s internal SQLite storage from time to time or switch to InfluxDB as data source, which has a [configurable retention policy](https://docs.influxdata.com/influxdb/latest/query_language/database_management/#create-retention-policies-with-create-retention-policy).
 <br>
 — Thanks to [Thomas](https://twitter.com/IT_Supertramp/status/956202617931223043) for asking about it.
 </div>

@@ -7,7 +7,23 @@
 
     <main>
         <div class="container">
-            {{{ contents }}}
+
+            <div class="grid-container">
+                <div>
+                    {{{ contents }}}
+                </div>
+                <aside>
+                    <h2>Skills</h2>
+                    {{#each skills}}
+                        <h4>{{ section }}</h4>
+                        <ul class="tag-list">
+                            {{#each list}}
+                                <li>{{{ . }}}</li>
+                            {{/each}}
+                        </ul>
+                    {{/each}}
+                </aside>
+            </div>
 
             <h2>Recent projects</h2>
             <ul class="project-list">

@@ -1,10 +1,10 @@
-<li class="project">
-    <div class="project-header">
-        <h3>{{ project }} <span><time>{{ time.from }}</time>–<time>{{ time.to }}</time></span></h3>
+<li class="grid-container">
+    <div class="grid-3-3">
+        <h3>{{ project }} <span class="time-period"><time>{{ time.from }}</time>–<time>{{ time.to }}</time></span></h3>
         {{{ markdown description }}}
     </div>
 
-    <div class="project-tasks">
+    <div class="grid-2-3">
         <ul>
             {{#each tasks}}
                 <li>{{ . }}</li>
@@ -12,7 +12,7 @@
         </ul>
     </div>
 
-    <ul class="project-techstack">
+    <ul class="tag-list">
         {{#each techstack}}
             <li>{{ . }}</li>
         {{/each}}

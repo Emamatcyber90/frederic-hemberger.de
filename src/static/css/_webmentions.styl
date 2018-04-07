@@ -1,0 +1,46 @@
+.webmention-list
+    display inline-block
+    list-style-type none
+    margin 0 0 1rem
+    padding 0
+
+    li,
+    figure,
+    figcaption
+        display inline-block
+        margin 0
+        padding 0
+
+.webmention-author
+    display inline-block
+    margin-right 0.5rem
+
+    img
+        width 3.5rem
+        height 3.5rem
+        -o-object-fit cover
+        object-fit cover
+        border-radius 50%
+        background-image embedurl('../avatar-placeholder.svg', 'utf8')
+        background-size cover
+
+        // @media only screen and (min-width 769px)
+        //     width 5.75rem
+        //     height 5.75rem
+
+.webmention-reply
+    width 100%
+
+    .webmention-author
+        margin-right 1rem
+    figcaption
+        vertical-align top
+
+    h4
+        margin 0.25rem 0 0
+
+.webmention-text
+    margin-left 4.5rem
+    margin-bottom 1rem
+    padding-bottom 1rem
+

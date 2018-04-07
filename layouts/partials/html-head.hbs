@@ -3,6 +3,8 @@
     <title>{{#if title}}{{ title }} | {{else}}{{#if html_title}}{{ html_title }} | {{/if}}{{/if}}{{ site.title }}</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://webmention.io">
+    <link rel="preconnect" href="https://s3-us-west-2.amazonaws.com">
     <link rel="preload" href="https://fonts.gstatic.com/s/sourcesanspro/v10/toadOcfmlt9b38dHJxOBGCP2LEk6lMzYsRqr3dHFImA.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/sourcesanspro/v10/ODelI1aHBYDBqgeIAH2zlJbPFduIYtoLzwST68uhz_Y.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -17,6 +19,9 @@
 
     <link rel="alternate" href="/feeds/feed.rss" title="Frederic Hemberger" type="application/rss+xml">
     <link rel="alternate" href="/feeds/talks.rss" title="Frederic Hemberger: Talks" type="application/rss+xml">
+
+    <link rel="pingback" href="https://webmention.io/frederic-hemberger.de/xmlrpc" />
+    <link rel="webmention" href="https://webmention.io/frederic-hemberger.de/webmention" />
 
     <link rel="stylesheet" href="/static/css/styles.css" media="all">
 </head>

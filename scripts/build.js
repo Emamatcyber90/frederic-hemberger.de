@@ -21,6 +21,7 @@ const externalCollections = require('./plugins/external-collections.js')
 const filterStylusPartials = require('./plugins/filter-stylus-partials.js')
 const inlineBaseCss = require('./plugins/inline-base-css.js')
 const mergeCollections = require('./plugins/merge-collections.js')
+const webmentions = require('./plugins/webmentions.js')
 
 function build () {
   console.time('[metalsmith] Build finished')
@@ -58,6 +59,10 @@ function build () {
       'podcasts': `${process.cwd()}/data/podcasts.yaml`,
       'projects': `${process.cwd()}/data/projects.yaml`,
       'talks': `${process.cwd()}/data/talks.yaml`
+    }))
+    .use(webmentions({
+      domain: 'frederic-hemberger.de',
+      token: process.env.WEBMENTION_API_KEY
     }))
     .use(mergeCollections(['articles', 'articles_external'], 'articles'))
     .use(mergeCollections(['articles', 'podcasts', 'talks', 'thoughts'], 'all'))

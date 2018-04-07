@@ -31,6 +31,7 @@
     "metalsmith-permalinks": "simbo/metalsmith-permalinks",
     "metalsmith-prism": "^3.1.1",
     "metalsmith-stylus": "^3.0.0",
+    "node-fetch": "^2.1.2",
     "strftime": "^0.10.0"
   },
   "devDependencies": {

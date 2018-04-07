@@ -14,7 +14,7 @@
                         {{#if deck}}<span class="article-deck">{{ deck }}</span><span class="visually-hidden">:</span>{{/if}}
                         {{ title }}
                     </h1>
-                    <div class="article-meta">
+                    <div class="meta">
                         <time datetime="{{ strftime date }}" pubdate>{{ strftime date }}</time> ·
                         {{#if update }}<span class="update"> updated: <time datetime="{{ strftime update }}">{{ strftime update }}</time></span> · {{/if}}
                         <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr title="Creative Commons Attribution ShareAlike License">CC BY-SA</abbr></a>
@@ -24,6 +24,61 @@
                 {{#if intro }}<div class="article-intro">{{{ markdown intro }}}</div>{{/if}}
                 {{{ contents }}}
             </article>
+
+            {{#if webmentions}}
+                <hr>
+                {{#if webmentions.like}}
+                    <h3>Likes</h3>
+                    <ul class="webmention-list">
+                    {{#each webmentions.like}}
+                        <li>
+                            <a class="webmention-author" href="{{ author.url }}" title="{{ author.name }}" rel="noreferrer">
+                                <img src="{{ author.photo }}" alt="{{ author.name }}">
+                            </a>
+                        </li>
+                    {{/each}}
+                    </ul>
+                {{/if}}
+
+                {{#if webmentions.repost}}
+                    <h3>Reposts</h3>
+                    <ul class="webmention-list">
+                    {{#each webmentions.repost}}
+                        <li>
+                            <a class="webmention-author" href="{{ author.url }}" title="{{ author.name }}" rel="noreferrer">
+                                <img src="{{ author.photo }}" alt="{{ author.name }}">
+                            </a>
+                        </li>
+                    {{/each}}
+                    </ul>
+                {{/if}}
+
+                {{#if webmentions.reply}}
+                    <h3>Replies</h3>
+                    <ul class="webmention-list">
+                    {{#each webmentions.reply}}
+                        <li class="webmention-reply">
+                            <figure role="group">
+                                <a class="webmention-author" href="{{ author.url }}" title="{{ author.name }}" rel="noreferrer">
+                                    <img src="{{ author.photo }}" alt="{{ author.name }}">
+                                </a>
+                                <figcaption>
+                                    <h4><a href="{{ author.url }}" rel="noreferrer">{{ author.name }}</a></h4>
+
+                                    <time class="meta" datetime="{{ published }}" pubdate>
+                                        <a href="{{ url }}" rel="noreferrer">{{ strftime published '%F %T'}}</a>
+                                    </time>
+                                </figcaption>
+                            </figure>
+
+                            <div class="webmention-text">
+                                {{{ space2nbsp content }}}
+                            </div>
+                        </li>
+                    {{/each}}
+                    </ul>
+                {{/if}}
+            {{/if}}
 
         </div>
     </main>

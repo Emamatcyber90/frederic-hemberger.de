@@ -19,14 +19,13 @@ module.exports = function webmentions (options) {
   return async function (files, metalsmith, done) {
     let metadata = metalsmith.metadata()
 
-    console.log(`[metalsmith] Loading webmentions: https://webmention.io/api/mentions?per-page=${Number.MAX_SAFE_INTEGER}&domain=${options.domain}&token=**********`)
-    const res = await fetch(`https://webmention.io/api/mentions?per-page=${Number.MAX_SAFE_INTEGER}&domain=${options.domain}&token=${options.token}`)
+    console.log(`[metalsmith] Loading webmentions for ${options.domain}`)
+    const res = await fetch(`https://webmention.io/api/mentions?sort-by=published&sort-dir=up&per-page=${Number.MAX_SAFE_INTEGER}&domain=${options.domain}&token=${options.token}`)
     const json = await res.json()
 
-    // Sort webmentions by date (descending), then split them by URL and activity type
+    // Split webmentions by URL and activity type
     const bucket = {}
     json.links
-      .sort((a, b) => new Date(a.data.published) - new Date(b.data.published))
       .forEach(webmention => {
         const path = url.parse(webmention.target).pathname
         bucket[path] = bucket[path] || {}

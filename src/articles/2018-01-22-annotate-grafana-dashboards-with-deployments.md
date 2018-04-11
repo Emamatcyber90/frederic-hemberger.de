@@ -8,9 +8,9 @@ intro: >
 date: 2018-01-22
 ---
 
-To get started, we need Grafana 4.6 or above to be installed for the native annotation store. If you're using an older version, you can use the same technique and store your annotations in [InfluxDB](https://www.influxdata.com/), for example.
+To get started, we need Grafana 4.6 or above to be installed for the native annotation store. If you’re using an older version, you can use the same technique and store your annotations in [InfluxDB](https://www.influxdata.com/), for example.
 
-For this tutorial, I'm using Docker to get the latest Grafana release running:
+For this tutorial, I’m using Docker to get the latest Grafana release running:
 
 ```bash
 docker run -d --name=grafana -p 3000:3000 grafana/grafana

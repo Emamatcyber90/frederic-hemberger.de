@@ -10,6 +10,12 @@ robots: noindex,nofollow
 
 I take your privacy very seriously, so this website doesn’t use cookies, website analytics software or any other means to track you. I also don’t store any server access logs.
 
-Utilizing [brid.gy](https://brid.gy) and [webmentions.io](https://webmentions.io), personal data already made public by Twitter users is shown below my articles. It consists of the user name, avatar and website of those people who interacted with my own tweets linking to this website. This includes @-replies, retweets, quote tweets, and likes.
+### Webmentions
 
-If you want your public reactions removed from this site, please get in touch.
+Utilizing [brid.gy](https://brid.gy) and [webmentions.io](https://webmentions.io), some personal data already made public by Twitter users is shown below my articles. It consists of the user name, avatar and website of those people who interacted with my own tweets linking to this website. This includes @-replies, retweets, quote tweets, and likes. This data is processed for the [purpose of legitimate interests](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e1888-1-1): I want to see what kind of blog posts you liked or replied to.
+
+If you want your reactions removed from this site, that's totally cool: Please get in touch and I'll do so immediately.
+
+### Hosting
+
+This website is hosted on Netlify (2325 3rd St #215, San Francisco, CA 94107, USA), [Privacy Policy](https://www.netlify.com/privacy/).

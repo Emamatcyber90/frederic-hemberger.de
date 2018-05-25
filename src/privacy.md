@@ -8,7 +8,7 @@ robots: noindex,nofollow
 
 # Privacy Policy
 
-I take your privacy very seriously, so this website doesn’t use cookies, website analytics software or any other means to track you. I also don’t store any server access logs.
+I take your privacy very seriously, so this website doesn’t use cookies, website analytics software or any other means to track you.
 
 ### Webmentions
 
@@ -18,4 +18,4 @@ If you want your reactions removed from this site, that's totally cool: Please g
 
 ### Hosting
 
-This website is hosted on Netlify (2325 3rd St #215, San Francisco, CA 94107, USA), [Privacy Policy](https://www.netlify.com/privacy/).
+This website is hosted on Netlify, Inc (2325 3rd Street, Suite 215, San Francisco, 94107 CA, USA), [Privacy Policy](https://www.netlify.com/privacy/). Access logs including the IP addresses of site visitors, are stored for less than 30 days.

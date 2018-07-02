@@ -1,8 +1,36 @@
 -
+  project: Developing a reliable platform for developers
+  time:
+    from: 05/2018
+    to: now
+  description: |
+    For a German DIY retailer, having their own Kubernetes cluster was a big step
+    forward for developer autonomy. It allows their digital unit to move faster
+    than with a traditional enterprise IT setup, try out new ideas and launch product prototypes.
+
+    By creating a reliable and reproducible setup, the infrastructure team gained
+    more trust in stability and resilience of the platform. Using GitOps, all
+    platform changes get reviewed and tested before automatically deploying them
+    with their own CI/CD pipeline.
+
+    For the developers, who hadn’t much experience with Kubernetes so far, we
+    eased their deployment process by encapsulating all domain specific knowledge
+    into Helm charts and custom tooling, so they can focus on writing software.
+  tasks:
+    - Analyzing of existing landscape and processes
+    - Planning of new infrastructure components
+    - Automation of infrastructure setup with Ansible and Helm
+    - Creating and optimizing CI/CD pipelines for deveopers' ease of use
+  techstack:
+    - Ansible
+    - GitLab
+    - Helm
+    - Kubernetes
+-
   project: Consulting and process optimization on various projects
   time:
     from: 01/2018
-    to: now
+    to: 03/2018
   description: |
     Optimizing existing workflows and general application setup improves product stability and eases the day-to-day work of development teams.
     I helped various clients:

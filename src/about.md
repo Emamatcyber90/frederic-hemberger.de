@@ -10,22 +10,19 @@ skills:
         - Accessibility
         - Usability
         - Responsive Design
-        - Agile Development (Scrum, Kanban)
+        - Agile Methologies (Scrum, Kanban)
+
+    - section: Development
+      list:
         - HTML5
         - CSS/Sass/Stylus
         - JavaScript
-
-    - section: JavaScript
-      list:
-        - Vanilla.js
-        - ES 201x
         - Node.js (Contributor/Team Member)
         - hapi.js, Express (Web Applications)
-        - Lab, Mocha, Chai (Unit Testing, BDD)
-        - ESLint, Standard, Snyk, <abbr title="Node Security Project">NSP</abbr> (Code Quality)
-        - Code coverage tools
+        - Lab, Mocha, Chai (Unit Testing)
+        - Code quality tools
         
-    - section: DevOps
+    - section: Infrastructure
       list:
         - Continuous Integration/Deployment
         - <abbr title="Amazon Web Services">AWS</abbr>
@@ -44,7 +41,6 @@ skills:
         - nginx
         - Git
         - Bash
-
 
 ---
 

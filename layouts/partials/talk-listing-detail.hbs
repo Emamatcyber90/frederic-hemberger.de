@@ -1,10 +1,12 @@
 <li>
-    <h3>{{{ title }}}</h3>
-    <div class="talk-deck">
-        {{#each held}}
-            {{ this.date }} · {{{ this.event }}}<br>
-        {{/each}}
-    </div>
+    <header>
+        <h3>{{{ title }}}</h3>
+        <span>
+            {{#each held}}
+                {{ this.date }} · {{{ this.event }}}<br>
+            {{/each}}
+        </span>
+    </header>
 
     <p>{{{ markdown intro }}}</p>
 

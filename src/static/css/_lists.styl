@@ -1,21 +1,21 @@
 slash($right-padding = 0.1em)
-    content '/'
-    padding 0 $right-padding 0 .3em
-    color $lightgray
+  content '/'
+  padding 0 $right-padding 0 .3em
+  color $lightgray
 
 .list-divider-slash
-    margin 0
-    padding 0
+  margin 0
+  padding 0
 
-    li
-        display inline-block
+  li
+    display inline-block
 
-        &:after
-            slash(.3em)
+    &:after
+      slash(.3em)
 
-        &:last-child:after
-            content ''
+    &:last-child:after
+      content ''
 
 .text-divider-slash:after
-    slash()
+  slash()
 

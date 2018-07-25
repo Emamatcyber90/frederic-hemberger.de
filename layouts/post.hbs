@@ -11,14 +11,14 @@
             <article>
                 <header>
                     <h1>
-                        {{#if deck}}<span class="article-deck">{{ deck }}</span><span class="visually-hidden">:</span>{{/if}}
+                        {{#if deck}}<span class="deck">{{ deck }}</span><span class="visually-hidden">:</span>{{/if}}
                         {{ title }}
                     </h1>
-                    <div class="meta">
+                    <span>
                         <time datetime="{{ strftime date }}" pubdate>{{ strftime date }}</time> ·
                         {{#if update }}<span class="update"> updated: <time datetime="{{ strftime update }}">{{ strftime update }}</time></span> · {{/if}}
                         <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr title="Creative Commons Attribution ShareAlike License">CC BY-SA</abbr></a>
-                    </div>
+                    </span>
                 </header>
 
                 {{#if intro }}<div class="article-intro">{{{ markdown intro }}}</div>{{/if}}

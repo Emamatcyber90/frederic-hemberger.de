@@ -1,52 +1,42 @@
-.meta
-    text-indent 0
-    font-size .875rem
-    letter-spacing 1px
-    color $darkgray
-    line-height 1.618rem
-
 article
-    .article-deck
-        margin-bottom -.2rem
+  .article-intro
+    font-size 1.2rem // = 24px
 
-    .article-intro
-        font-size 1.2rem // = 24px
+  h2 + *
+    margin-top 0.5em
 
-    h2 + *
-        margin-top 0.5em
-
-    header
-        margin-bottom 3rem
-        padding-bottom .295rem
+  header
+    margin-bottom 3rem
+    padding-bottom .295rem
 
 code
-    color $darkgray
+  color $darkgray
 
 pre
-    // background-color #002b36
-    border 1px solid #f1eeeb
-    background-color #faf8f5
+  // background-color #002b36
+  border 1px solid #f1eeeb
+  background-color #faf8f5
 
-    border-radius 2px
-    padding 0.75em 1.2em
-    font-size 0.8em
+  border-radius 2px
+  padding 0.75em 1.2em
+  font-size 0.8em
 
-    code
-        // color #f0f0f0
-        color #393A34
+  code
+    // color #f0f0f0
+    color #393A34
 
 blockquote
-    position relative
-    border-bottom 1px solid #ccc
-    padding-left 2.5rem
-    margin: 2em 0
+  position relative
+  border-bottom 1px solid #ccc
+  padding-left 2.5rem
+  margin: 2em 0
 
-    &::before
-        content '“'
-        position absolute
-        left 0
-        top -.15em
-        font-size 5rem
-        line-height 1
-        color #ccc
+  &::before
+    content '“'
+    position absolute
+    left 0
+    top -.15em
+    font-size 5rem
+    line-height 1
+    color #ccc
 

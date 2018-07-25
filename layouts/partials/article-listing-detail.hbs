@@ -1,8 +1,10 @@
 <li>
-    <div class="article-deck"><time>{{ strftime date }}</time>{{#if deck}} · {{ deck }}{{/if}}</div>
-    {{#if path}}
-        <a href="{{#startswith path 'http'}}{{ path }}{{ else }}/{{ path }}{{/startswith}}/">{{{ title }}}</a>
-    {{else}}
-        {{{ title }}}
-    {{/if}}
+    <header>
+        <span><time>{{ strftime date }}</time>{{#if deck}} · {{ deck }}{{/if}}</span>
+        {{#if path}}
+            <a href="{{#startswith path 'http'}}{{ path }}{{ else }}/{{ path }}{{/startswith}}/">{{{ title }}}</a>
+        {{else}}
+            {{{ title }}}
+        {{/if}}
+    </header>
 </li>

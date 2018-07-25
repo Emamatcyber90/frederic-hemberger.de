@@ -23,6 +23,15 @@ const inlineBaseCss = require('./plugins/inline-base-css.js')
 const mergeCollections = require('./plugins/merge-collections.js')
 const webmentions = require('./plugins/webmentions.js')
 
+function onlyProduction (child) {
+  if (process.env.NODE_ENV && process.env.NODE_ENV !== 'production') {
+    return function (files, metalsmith, done) {
+      done()
+    }
+  }
+  return child
+}
+
 function build () {
   console.time('[metalsmith] Build finished')
   Metalsmith(process.cwd())
@@ -60,17 +69,17 @@ function build () {
       'projects': `${process.cwd()}/data/projects.yaml`,
       'talks': `${process.cwd()}/data/talks.yaml`
     }))
-    .use(webmentions({
+    .use(onlyProduction(webmentions({
       domain: 'frederic-hemberger.de',
       token: process.env.WEBMENTION_API_KEY
-    }))
+    })))
     .use(mergeCollections(['articles', 'articles_external'], 'articles'))
     .use(mergeCollections(['articles', 'podcasts', 'talks', 'thoughts'], 'all'))
-    .use(feed({
+    .use(onlyProduction(feed({
       collection: 'talks',
       destination: 'feeds/talks.rss'
-    }))
-    .use(feed({
+    })))
+    .use(onlyProduction(feed({
       collection: 'all',
       destination: 'feeds/feed.rss',
       preprocess: (itemData) => {
@@ -85,21 +94,21 @@ function build () {
 
         return itemData
       }
-    }))
-    // .use(feed({
+    })))
+    // .use(onlyProduction(feed({
     //   collection: 'thoughts',
     //   destination: 'feeds/thoughts.rss'
-    // }))
+    // })))
     .use(prism())
     .use(filterStylusPartials())
     .use(stylus({
       compress: true,
       use: [autoprefixer()]
     }))
-    .use(cssnano([
+    .use(onlyProduction(cssnano([
       'static/css/styles.css',
       'static/css/article.css'
-    ]))
+    ])))
     .use(discoverPartials({
       directory: 'layouts/partials',
       pattern: /\.hbs$/
@@ -109,8 +118,8 @@ function build () {
       pattern: /\.js$/
     }))
     .use(layouts())
-    .use(inlineBaseCss())
-    .use(htmlMinifier())
+    .use(onlyProduction(inlineBaseCss()))
+    .use(onlyProduction(htmlMinifier()))
     .build((err) => {
       if (err) { throw err }
       console.timeEnd('[metalsmith] Build finished')

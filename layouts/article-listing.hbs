@@ -17,26 +17,6 @@
                 {{/each}}
             </ul>
 
-            <h2>Articles in German</h2>
-            <ul class="article-list" lang="de">
-                {{#each collections.articles}}
-                    {{#equals lang 'de'}}
-                        {{> article-listing-detail }}
-                    {{/equals}}
-                {{/each}}
-            </ul>
-
-
-            <h2>Podcasts in German</h2>
-            <ul class="article-list" lang="de">
-                {{#each collections.podcasts}}
-                    <li>
-                        <div class="article-deck"><time>{{ strftime date }}</time>{{#if deck}} · {{ deck }}{{/if}}</div>
-                        <a href="{{ path }}")>{{{ title }}}</a>
-                    </li>
-                {{/each}}
-            </ul>
-
         </div>
     </main>
 

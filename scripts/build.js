@@ -64,8 +64,6 @@ function build () {
       }
     }))
     .use(externalCollections({
-      'articles_external': `${process.cwd()}/data/articles_external.yaml`,
-      'podcasts': `${process.cwd()}/data/podcasts.yaml`,
       'projects': `${process.cwd()}/data/projects.yaml`,
       'talks': `${process.cwd()}/data/talks.yaml`
     }))
@@ -73,8 +71,7 @@ function build () {
       domain: 'frederic-hemberger.de',
       token: process.env.WEBMENTION_API_KEY
     })))
-    .use(mergeCollections(['articles', 'articles_external'], 'articles'))
-    .use(mergeCollections(['articles', 'podcasts', 'talks', 'thoughts'], 'all'))
+    .use(mergeCollections(['articles', 'talks'/*, 'thoughts' */], 'all'))
     .use(onlyProduction(feed({
       collection: 'talks',
       destination: 'feeds/talks.rss'
@@ -83,9 +80,6 @@ function build () {
       collection: 'all',
       destination: 'feeds/feed.rss',
       preprocess: (itemData) => {
-        // Decode HTML entities in "title"
-        itemData.title = itemData.title.replace(/&lt;head&gt;/, '»head«')
-
         if (itemData.description) {
           itemData.description = itemData
             .description.toString('utf8')

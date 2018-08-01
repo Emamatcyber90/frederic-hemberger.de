@@ -1,20 +1,17 @@
-<li class="grid-container">
-    <div class="grid-3-3">
-        <h3>{{ project }} <span class="time-period"><time>{{ time.from }}</time>–<time>{{ time.to }}</time></span></h3>
-        {{{ markdown description }}}
-    </div>
+<article>
 
-    <div class="grid-2-3">
-        <ul>
-            {{#each tasks}}
-                <li>{{ . }}</li>
-            {{/each}}
-        </ul>
-    </div>
+    <header>
+        <h3>{{ project }}</h3>
+        <span>
+            {{#if sector}}{{ sector }}, {{/if}}
+            <time>{{ time.from }}</time>&#x200a;&ndash;&#x200a;<time>{{ time.to }}</time>
+        </span>
+    </header>
 
-    <ul class="tag-list">
-        {{#each techstack}}
-            <li>{{ . }}</li>
+    <ul>
+        {{#each tasks}}
+            <li>{{{ . }}}</li>
         {{/each}}
     </ul>
-</li>
+
+</article>

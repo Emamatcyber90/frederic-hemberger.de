@@ -1,141 +1,61 @@
 -
-  project: Developing a reliable platform for developers
+  project: Introducing automation to build a reliable platform for developers
+  sector: Retail
   time:
     from: 05/2018
     to: now
-  description: |
-    For a German DIY retailer, having their own Kubernetes cluster was a big step
-    forward for developer autonomy. It allows their digital unit to move faster
-    than with a traditional enterprise IT setup, try out new ideas and launch product prototypes.
-
-    By creating a reliable and reproducible setup, the infrastructure team gained
-    more trust in stability and resilience of the platform. Using GitOps, all
-    platform changes get reviewed and tested before automatically deploying them
-    with their own CI/CD pipeline.
-
-    For the developers, who hadn’t much experience with Kubernetes so far, we
-    eased their deployment process by encapsulating all domain specific knowledge
-    into Helm charts and custom tooling, so they can focus on writing software.
   tasks:
-    - Analyzing of existing landscape and processes
-    - Planning of new infrastructure components
-    - Automation of infrastructure setup with Ansible and Helm
-    - Creating and optimizing CI/CD pipelines for deveopers' ease of use
-  techstack:
-    - Ansible
-    - GitLab
-    - Helm
-    - Kubernetes
+    - Analyzing of existing system landscape and processes
+    - Configuration management and packaging of applications with Helm
+    - Automated roll-out of software components (GitOps) on Kubernetes
+    - Creating and optimizing CI/CD pipelines for developers’ ease of use (GitLab)
+    - Setup monitoring with Prometheus
 -
-  project: Consulting and process optimization on various projects
+  project: Consulting and process optimization for various clients
   time:
     from: 01/2018
     to: 03/2018
-  description: |
-    Optimizing existing workflows and general application setup improves product stability and eases the day-to-day work of development teams.
-    I helped various clients:
   tasks:
-    - Dockerizing their applications for parallel testing in build pipelines
-    - Evaluating Kubernetes as foundation for a new PaaS
-    - Defining their infrastructure as code with Ansible
+    - Consulting on Kubernetes as foundation for a new PaaS startup
+    - Defining infrastructure as code
     - Setting up monitoring with Prometheus
-  techstack:
-    - AWS
-    - Ansible
-    - Docker
-    - GitLab
-    - Helm
-    - Kubernetes
-    - Prometheus
+    - Dockerizing applications for parallel testing in build pipelines (GitLab)
 -
-  project: Digital transition from a classic enterprise environment to the cloud
+  project: Digital transition from classic enterprise environment to the cloud
+  sector: Insurance
   time:
     from: 03/2017
     to: 09/2017
-  description: |
-    How do you go from »release every couple of months« – still quite common in many large organizations – to much shorter iterations?
-    And all while adopting cloud infrastructure as part of your IT stack?
-
-    I helped designing and implementing best-practices for team-managed build pipelines and cluster resources on top of Kubernetes and AWS.
-    They empower teams to work on their own release schedule, while updates and security fixes are automatically deployed from a central source.
   tasks:
-    - Consulting regarding cloud setup and CI/CD pipeline
-    - Software architecture and implementation
-    - Microservice development
-  techstack:
-    - AWS
-    - Ansible
-    - Docker
-    - hapi.js
-    - Helm
-    - Jenkins
-    - Kubernetes
-    - Node.js
-    - MongoDB
-    - Prometheus
+    - Consulting on cloud setup, Kubernetes and CI/CD pipelines
+    - Developing and refining a blueprint Kubernetes setup for multiple teams on <acronym title="Amazon Web Services">AWS</acronym>
+    - Software architecture for data management platform
+    - Microservice implementation in Node.js, using Apache Kafka
 -
   project: Migrating existing applications and services onto Kubernetes
+  sector: E-Commerce
   time:
     from: 11/2016
     to: 02/2017
-  description: |
-    Managing a heterogeneous environment of microservices on AWS with an raising number of applications was becoming increasingly uncomfortable
-    for the client’s devops team. Parts of the stack were using different deployment pipelines and instrumentation. We gradually replaced the
-    setup with Kubernetes, which gave us a better saturation of hardware resources and greatly improved observability and scalability.
-
-    The new standardized build setup also helped us to create and deploy services more reliably.
   tasks:
-    - Creation of a continuous integration / deployment workflow
-    - Revision of the container-based infrastructure
-    - Migration of existing applications to Kubernetes clusters
-    - Development of internal DevOps tools
-  techstack:
-    - AWS
-    - Codeship
-    - Docker
-    - ELK stack
-    - Kubernetes
+    - Analyzing existing applications
+    - Migrating them to Kubernetes, creating necessary tooling
+    - Setting up CI/CD pipelines
 -
-  project: Creating of an international aviation B2B marketplace
+  project: Product development of an international B2B marketplace
+  sector: Aviation
   time:
     from: 03/2015
     to: 11/2016
-  description: |
-    This was one of the rare opportunities to create an innovative new product completely from scratch. Analyzing typical (still mostly analog) workflows in
-    air cargo sector and creating a unique B2B marketplace for optimizing cargo routes and avoiding empty leg flights. Offering easy flight and cargo
-    management for airline brokers to help them with their daily work.
   tasks:
-    - Technical concept, product and feature development
-    - Software architecture and implementation
-    - Setup of Continuous Deployment pipeline and initial monitoring
-  techstack:
-    - AWS
-    - CircleCI
-    - Docker
-    - ELK stack
-    - Grafana
-    - hapi.js
-    - InfluxDB
-    - MongoDB
-    - Node.js
-    - Rancher
+    - Technical concept and product development
+    - Software architecture and implementation in Node.js
 -
-  project: Turning a big fashion online store from monolith to microservice
+  project: Turning a big fashion online store from monolith into microservices
+  sector: E-Commerce
   time:
     from: 05/2014
     to: 12/2014
-  description: |
-    Having a monolithic, highly customized online store makes it hard to adapt quickly to new business needs. Changes often took weeks to implement and
-    test because of the complex code base. Carefully, we singled out parts which could be turned into independent Node.js microservices.
-    All of the customer facing web front-end was rewritten as modular and responsive code as well.
   tasks:
-    - Front-end/back-end development
-    - RESTful API development
+    - Front-end and RESTful API development (Node.js)
     - Web performance and image optimization
-    - Consulting
-  techstack:
-    - CircleCI
-    - Express
-    - hapi.js
-    - MongoDB
-    - Node.js

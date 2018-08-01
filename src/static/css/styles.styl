@@ -31,6 +31,13 @@ body
 img
   max-width 100%
 
+article
+  margin-bottom 2rem
+
+  & + &
+    border-top 1px solid #eee
+    padding-top 0.5rem
+
 h1,
 h2,
 h3,
@@ -53,7 +60,6 @@ h2
 
 h3
   margin-top 1em
-
 
 a,
 a:link,
@@ -94,6 +100,15 @@ hr
   border 1px solid $lightgray
   border-bottom transparent
 
+abbr[title],
+acronym[title]
+  text-decoration none
+  cursor help
+  border-bottom 1px dotted $darkgray
+
+ul
+  padding-left 1.2rem
+
 strong.normal
   font-weight normal
 
@@ -115,7 +130,6 @@ strong.normal
 
   h1
     font-size inherit
-    margin-bottom 1em
 
   p
     font-size 1.5rem // = 30px
@@ -123,5 +137,6 @@ strong.normal
   span
     color $darkgray
     display block
+    font-size inherit
     font-weight 300
     line-height 1.2

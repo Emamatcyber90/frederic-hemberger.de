@@ -9,22 +9,18 @@
         <div class="container">
 
             <h2>Talks in English</h2>
-            <ul class="talk-list" lang="en">
-                {{#each collections.talks}}
-                    {{#equals lang 'en'}}
-                        {{> talk-listing-detail}}
-                    {{/equals}}
-                {{/each}}
-            </ul>
+            {{#each collections.talks}}
+                {{#equals lang 'en'}}
+                    {{> talk-listing-detail}}
+                {{/equals}}
+            {{/each}}
 
             <h2>Talks in German</h2>
-            <ul class="talk-list" lang="de">
-                {{#each collections.talks}}
-                    {{#equals lang 'de'}}
-                        {{> talk-listing-detail}}
-                    {{/equals}}
-                {{/each}}
-            </ul>
+            {{#each collections.talks}}
+                {{#equals lang 'de'}}
+                    {{> talk-listing-detail}}
+                {{/equals}}
+            {{/each}}
 
         </div>
     </main>

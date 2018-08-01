@@ -7,16 +7,23 @@
 
     <main>
         <div class="container">
+            <h1>{{ headline }}</h1>
 
             <div class="grid-container">
                 <div>
                     {{{ contents }}}
+
+                    <h2>Recent projects</h2>
+                    {{#each collections.projects}}
+                        {{> project-listing-detail }}
+                    {{/each}}
                 </div>
+
                 <aside>
                     <h2>Skills</h2>
                     {{#each skills}}
-                        <h4>{{ section }}</h4>
-                        <ul class="tag-list">
+                        <h3>{{ section }}</h3>
+                        <ul class="skill-list">
                             {{#each list}}
                                 <li>{{{ . }}}</li>
                             {{/each}}
@@ -24,13 +31,6 @@
                     {{/each}}
                 </aside>
             </div>
-
-            <h2>Recent projects</h2>
-            <ul class="project-list">
-                {{#each collections.projects}}
-                    {{> project-listing-detail }}
-                {{/each}}
-            </ul>
 
         </div>
     </main>

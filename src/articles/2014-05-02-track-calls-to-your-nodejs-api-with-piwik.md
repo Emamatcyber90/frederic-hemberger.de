@@ -41,7 +41,7 @@ piwik.track({
     // The full request URL
     url: baseUrl + req.url,
 
-    // This will be shown as title in your Piwik backend
+    // This will be shown as title in your Piwik back-end
     action_name: 'API call',
 
     // User agent and language settings of the client
@@ -77,7 +77,7 @@ piwik.track({
 ```
 
 
-As we have now collected all the values that we wanted to track, we’re basically done. But if you’re using Express or restify for your backend, we can still go one step further and put all of this together into a custom middleware, which makes tracking requests even easier.
+As we have now collected all the values that we wanted to track, we’re basically done. But if you’re using Express or restify for your back-end, we can still go one step further and put all of this together into a custom middleware, which makes tracking requests even easier.
 
 First we start off with the basic code of our new middleware and save it as `lib/express-piwik-tracker.js`:
 

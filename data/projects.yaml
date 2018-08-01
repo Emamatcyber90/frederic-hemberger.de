@@ -127,9 +127,9 @@
   description: |
     Having a monolithic, highly customized online store makes it hard to adapt quickly to new business needs. Changes often took weeks to implement and
     test because of the complex code base. Carefully, we singled out parts which could be turned into independent Node.js microservices.
-    All of the customer facing web frontend was rewritten as modular and responsive code as well.
+    All of the customer facing web front-end was rewritten as modular and responsive code as well.
   tasks:
-    - Frontend/backend development
+    - Front-end/back-end development
     - RESTful API development
     - Web performance and image optimization
     - Consulting

@@ -3,6 +3,11 @@
   max-width $body-max-width
   margin 0 auto
 
+  // "15" determined by fair trial and error
+  @media screen and (max-width $body-max-width + 15)
+    max-width none
+    padding 0 $container-padding
+
 .grid-container
   display grid
   grid-column-gap 3rem

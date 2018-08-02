@@ -1,5 +1,5 @@
 @import '_variables'
-@import '_webfonts'
+// @import '_webfonts'
 @import '_layout'
 @import '_navigation'
 @import '_lists'
@@ -8,17 +8,22 @@
 
 html
   box-sizing border-box
-  padding 1em
+  margin 0
+  padding 0
 
-  font-size 18px
-  line-height 1.5
-  font-family 'Source Sans Pro', Open Sans, Roboto, Helvetica, Arial, sans-serif
-  font-weight 300
   background #fff
-  color $darkblue //#343a3e
+  color $darkblue
 
-  -webkit-text-size-adjust 100%
+  font-size 20px
+  line-height 1.5
+  font-family $default-font-stack
+  font-weight 300
+
   -ms-text-size-adjust 100%
+  -webkit-text-size-adjust 100%
+  -moz-osx-font-smoothing grayscale
+  -webkit-font-smoothing antialiased
+  font-smoothing antialiased
 
   @media screen and (max-width $single-column-width)
     font-size 16px
@@ -31,6 +36,13 @@ html
   color #fff
 
 body
+  border-top: 1px solid $midnight
+  margin 0
+  padding 0
+
+  header > .container
+    border-top 0.4rem solid $midnight
+
   > footer
     margin-top 5em
     margin-bottom 2em
@@ -39,11 +51,7 @@ img
   max-width 100%
 
 article
-  margin-bottom 2rem
-
-  & + &
-    border-top 1px solid #eee
-    padding-top 0.5rem
+  margin-bottom 2.2rem
 
 h1,
 h2,
@@ -51,19 +59,19 @@ h3,
 h4,
 h5
   font-weight normal
-  margin-bottom .5em
-  // color $red
+  margin-bottom .5rem
+  color $midnight
 
   a
     color inherit
 
 h1
-  font-size 2.0em
+  font-size 2.0rem
   margin-bottom 0
 
 h2
-  font-size 1.5em
-  margin-top 1.5em
+  font-size 1.5rem
+  margin-top 1.5rem
 
 h3
   margin-top 1em
@@ -80,23 +88,6 @@ a:hover,
 a:active,
 a.active
   color $darkblue
-
-a.button
-  display inline-block
-  margin .25em 0
-  padding .5em 0.75em
-
-  font-size 1.2em
-  line-height 1
-  text-align center
-  white-space nowrap
-  vertical-align baseline
-
-  border-radius .125rem
-  background-color hsl(346, 84%, 48%)
-  background-image linear-gradient(180deg, hsl(346, 84%, 48%), hsl(331, 84%, 48%))
-  box-shadow 0 0 1px hsla(346, 84%, 34%, 1)
-  color inherit
 
 .p-name > a
   color inherit
@@ -129,17 +120,8 @@ strong.normal
 
 .home-intro
   margin-top 140px
-  font-size 1.9rem // = 38px
+  font-size 1.5rem
 
-  @media screen and (max-width $mobile-width)
-    font-size 1.5rem // = 30px
-    line-height 1.5
-
-  h1
-    font-size inherit
-
-  p
-    font-size 1.5rem // = 30px
-
+  h1,
   span
     font-size inherit

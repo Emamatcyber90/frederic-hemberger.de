@@ -3,7 +3,7 @@
   sector: Retail
   time:
     from: 05/2018
-    to: now
+    to: 08/2018
   tasks:
     - Analyzing of existing system landscape and processes
     - Configuration management and packaging of applications with Helm

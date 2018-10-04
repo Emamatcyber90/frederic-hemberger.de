@@ -7,7 +7,7 @@ module.exports = function cssNano (cssFiles) {
     cssFiles = cssFiles.map((file) => {
       console.log('[metalsmith] Shrinking CSS file', file)
       return cssnano
-        .process(files[file].contents.toString())
+        .process(files[file].contents.toString(), { from: undefined })
         .then((result) => {
           files[file].contents = Buffer.from(result.css)
         })

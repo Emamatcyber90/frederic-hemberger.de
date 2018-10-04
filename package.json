@@ -12,29 +12,29 @@
   },
   "dependencies": {
     "autoprefixer-stylus": "^0.14.0",
-    "cssnano": "^3.10.0",
-    "handlebars": "^4.0.11",
+    "cssnano": "^4.1.4",
+    "handlebars": "^4.0.12",
     "js-yaml": "^3.12.0",
     "jstransformer-handlebars": "^1.1.0",
-    "marked": "^0.4.0",
+    "marked": "^0.5.1",
     "metalsmith": "^2.3.0",
     "metalsmith-collections": "^0.9.0",
-    "metalsmith-discover-helpers": "^0.1.0",
-    "metalsmith-discover-partials": "^0.1.0",
+    "metalsmith-discover-helpers": "^0.1.1",
+    "metalsmith-discover-partials": "^0.1.2",
     "metalsmith-feed": "^1.0.0",
     "metalsmith-html-minifier": "^3.0.0",
-    "metalsmith-layouts": "^2.1.0",
-    "metalsmith-markdown": "^0.2.2",
+    "metalsmith-layouts": "^2.2.0",
+    "metalsmith-markdown": "^1.0.1",
     "metalsmith-metadata": "0.0.4",
     "metalsmith-permalinks": "simbo/metalsmith-permalinks",
     "metalsmith-prism": "^3.1.1",
     "metalsmith-stylus": "^3.0.0",
-    "node-fetch": "^2.1.2",
+    "node-fetch": "^2.2.0",
     "strftime": "^0.10.0"
   },
   "devDependencies": {
     "chokidar": "^2.0.4",
-    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard": "^12.0.0",
     "st": "^1.2.2"
   }
 }

@@ -1,16 +1,42 @@
-$body-max-width         = 45rem
-$container-padding      = 1.25rem
+$body-max-width             = 45rem
+$container-padding          = 1.25rem
 
-$mobile-width           = 480px
-$single-column-width    = 540px
+$mobile-width               = 480px
+$single-column-width        = 540px
 
-$red       = #e31445
-$blue      = #22bad9 // not in use
-$midnight  = #02004e
-$darkblue  = #002133 // = hsl(201, 100%, 10%)
-$darkgray  = #666
-$lightgray = #999
+$red                        = #e31445
+$blue                       = #22bad9 // not in use
+$midnight                   = #02004e
+$darkblue                   = #002133 // = hsl(201, 100%, 10%)
+$darkgray                   = #666
+$lightgray                  = #999
 
-// $default-font-stack   = 'Source Sans Pro', Open Sans, Roboto, Helvetica, Arial, sans-serif
-$default-font-stack   = -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
-$monospace-font-stack = Menlo,"Consolas","Bitstream Vera Sans Mono","Courier New",Courier,monospace
+$background-color           = #fff
+$header-color               = $midnight
+$text-color                 = $darkblue
+$dim-color                  = $darkgray
+$selection-color            = $red
+$link-color                 = $red
+$link-active-color          = $darkblue
+$headline-color             = $midnight
+
+$background-color-darkmode  = hsla(201, 50%, 10%, 1)
+$header-color-darkmode      = $blue
+$text-color-darkmode        = #f0f0f0
+$dim-color-darkmode         = $lightgray
+$selection-color-darkmode   = #fff
+$link-color-darkmode        = #ff285b
+$link-active-color-darkmode = #f0f0f0
+$headline-color-darkmode    = $blue
+
+// $default-font-stack      = 'Source Sans Pro', Open Sans, Roboto, Helvetica, Arial, sans-serif
+$default-font-stack         = -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+$monospace-font-stack       = Menlo,"Consolas","Bitstream Vera Sans Mono","Courier New",Courier,monospace
+
+$force-darkmode = false
+
+colormode(item)
+  if $force-darkmode
+    lookup('$' + item + '-darkmode')
+  else
+    lookup('$' + item)

@@ -20,12 +20,18 @@
 
 .highlight-box
   padding 0 15px
-  color $darkgray
+  color colormode('dim-color')
   border-left 4px solid #ddd
+
+  @media (prefers-dark-interface)
+    color $dim-color-darkmode
 
 header span
   display block
   font-size 0.875rem
   font-weight 300
   letter-spacing 0.25px
-  color $darkgray
+  color colormode('dim-color')
+
+  @media (prefers-dark-interface)
+    color $dim-color-darkmode

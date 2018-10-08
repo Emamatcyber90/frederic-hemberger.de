@@ -1,4 +1,13 @@
 -
+  project: Enabling scaleable print workflows on premise and in the cloud
+  sector: Print
+  time:
+    from: 09/2018
+    to: today
+  tasks:
+    - Analyzing and optimizing existing workflows
+    - Consulting on system architecture and infrastructure
+-
   project: Introducing automation to build a reliable platform for developers
   sector: Retail
   time:
@@ -21,7 +30,7 @@
     - Setting up monitoring with Prometheus
     - Dockerizing applications for parallel testing in build pipelines (GitLab)
 -
-  project: Digital transition from classic enterprise environment to the cloud
+  project: Digital transition from a classic enterprise environment to the cloud
   sector: Insurance
   time:
     from: 03/2017

@@ -1,0 +1,32 @@
+.talk
+  display grid
+  grid-template-columns 3fr 2fr
+  grid-column-gap 20px
+  line-height 1.5rem
+
+  @media screen and (max-width $single-column-width)
+    display initial
+
+  h3
+    grid-column span 3
+
+.talk-description,
+.talk-events
+  > :first-child
+    margin-top 0.5em
+
+.talk-events
+    font-size .75rem
+    font-weight 300
+    letter-spacing .25px
+    color $darkgray
+
+    h4
+      margin-bottom 0
+
+    ul
+      margin-top 0
+
+.talk-events time
+    display inline-block
+    width 6em

@@ -1,20 +1,32 @@
-<article>
+<article class="talk">
 
-    <header>
-        <h3>{{{ title }}}</h3>
-        <span>
-            {{#each held}}
-                {{ this.date }} · {{{ this.event }}}<br>
+    <h3><a href="{{ path }}">{{{ title }}}</a></h3>
+
+    <div class="talk-description">
+        {{{ markdown intro }}}
+
+        {{#if links}}
+            <ul>
+                {{#each links}}
+                    <li><a href="{{ . }}">{{ @key }}</a></li>
+                {{/each}}
+            </ul>
+        {{/if}}
+    </div>
+
+    <aside class="talk-events">
+        <h4>Presented at:</h4>
+        <ul>
+            {{#each events}}
+                <li>
+                    <time>{{ this.date }}</time>
+                    {{#if this.url}}
+                        <a href="{{{ this.url }}}" rel="noreferrer">{{ this.name }}</a>
+                    {{else}}
+                        {{ this.name }}
+                    {{/if}}
+                </li>
             {{/each}}
-        </span>
-    </header>
-
-    <p>{{{ markdown intro }}}</p>
-
-    <ul>
-        {{#each links}}
-            <li><a href="{{ . }}">{{ @key }}</a></li>
-        {{/each}}
-    </ul>
-
+        </ul>
+    </aside>
 </article>

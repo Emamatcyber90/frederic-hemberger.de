@@ -1,55 +1,71 @@
 -
   lang: en
   title: Monitoring with Prometheus
-  date: 2018-03-15
+  date: '2018-03-15'
   intro: |
     How to keep track of your applications at runtime has been an issue for developers
-    long before this whole »devops« became a thing.
+    long before this whole »DevOps« became a thing.
 
     This talk shows with a couple of small live demos what Prometheus is and what makes
     it so interesting. You will learn how to easily collect and evaluate metrics
     from servers and applications in minutes, what the difference between blackbox
     and whitebox monitoring is, and how to send alerts to different recipients.
-  image:
-  path: https://github.com/fhemberger/talks/tree/master/websecurity
+  path: https://github.com/fhemberger/talks/tree/master/prometheus
   links:
-      'Resources': https://github.com/fhemberger/talks/tree/master/prometheus
-  held:
-    - { date: '2018-03-15', event: '<a href="https://www.meetup.com/de-DE/Bonner-Microservices-Meetup/">Bonner Microservices Meetup</a>, Bonn' }
-    - { date: '2018-03-21', event: '<a href="https://www.meetup.com/de-DE/devops-duesseldorf/">DevOps Düsseldorf</a>, Düsseldorf' }
+  events:
+    - date: '2018-03-15'
+      name: Bonner Microservices Meetup
+      city: Bonn
+      url: https://www.meetup.com/de-DE/Bonner-Microservices-Meetup/
+    - date: '2018-03-21'
+      name: DevOps Düsseldorf
+      city: Düsseldorf
+      url: https://www.meetup.com/de-DE/devops-duesseldorf/
 
 -
   lang: en
   title: A quick introduction to Kubernetes
-  date: 2017-02-09
-  intro:
-  image:
+  date: '2017-02-09'
+  intro: |
+    Lightning talk:
+    What is Kubernetes?
+    What basic elements are required to deploy an application?
+    What are some of the platform’s benefits?
   path: https://frederic-hemberger.de/talks/kubernetes-quick-intro/
   links:
-      'Slides': https://frederic-hemberger.de/talks/kubernetes-quick-intro/
-  held:
-    - { date: '2017-02-09', event: '<a href="https://www.meetup.com/de-DE/devops-duesseldorf/">DevOps Düsseldorf</a>, Düsseldorf' }
+  events:
+    - date: '2017-02-09'
+      name: DevOps Düsseldorf
+      city: Düsseldorf
+      url: https://www.meetup.com/de-DE/devops-duesseldorf/
 -
   lang: en
   title: There’s no party like 3rd party – handle dependencies securely
-  date: 2016-10-23
+  date: '2016-10-23'
   intro: |
     Web developers use frameworks, libraries and 3rd-party services like analytics or
     advertising on a daily basis. But often we don’t take the time to reflect how all
     those building blocks are affecting security. How can we take back control of what
     code really gets executed on our websites?
-  image:
   path: https://frederic-hemberger.de/talks/third-party/
   links:
-      'Slides': https://frederic-hemberger.de/talks/third-party/
-  held:
-    - { date: '2016-10-23', event: '<a href="https://duesseldorf.devfest.de/">GDG DevFest</a>, Düsseldorf' }
-    - { date: '2017-03-08', event: '<a href="https://www.meetup.com/de-DE/PottJS/">Pott.js</a>, Essen' }
-    - { date: '2017-09-13', event: '<a href="https://www.meetup.com/IT-Security-Kassel-und-Nordhessen/">IT-Security Meetup</a>, Kassel' }
+  events:
+    - date: '2016-10-23'
+      name: GDG DevFest
+      city: Düsseldorf
+      url: https://duesseldorf.devfest.de/
+    - date: '2017-03-08'
+      name: Pott.js
+      city: Essen
+      url: https://www.meetup.com/de-DE/PottJS/
+    - date: '2017-09-13'
+      name: IT-Security Meetup
+      city: Kassel
+      url: https://www.meetup.com/IT-Security-Kassel-und-Nordhessen/
 -
   lang: en
   title: Don’t cross the sites!
-  date: 2015-08-22
+  date: '2015-08-22'
   intro: |
     It’s 2015 and Cross Site Scripting (XSS) attacks are still ranking high in OWASP’s
     »Top Ten Security Risks«.
@@ -58,17 +74,18 @@
     prevent those kind of attacks on our websites? I’ll talk about some of the bad advice
     (unfortunately being repeated on the web over and over again) and show you better,
     more sustainable approaches.
-  image: talk-froscon-xss.png
   path: https://frederic-hemberger.de/talks/froscon-xss/
   links:
-      'Slides': https://frederic-hemberger.de/talks/froscon-xss/
-  held:
-    - { date: '2015-08-22', event: '<a href="http://froscon.de">FrOSCon 2015</a>, St. Augustin' }
+  events:
+    - date: '2015-08-22'
+      name: FrOSCon 2015
+      city: St. Augustin
+      url: https://froscon.de
 
 -
   lang: en
   title: Developing a web-security mindset
-  date: 2015-03-07
+  date: '2015-03-07'
   intro: |
     Security is often the neglected step-child of web-development. It has the reputation of being
     hard and complex and in general to be someone else’s problem. Too often it’s addressed after
@@ -78,51 +95,60 @@
     In my talk I want to show you why it matters to bake security into your project right from the
     start, how to act responsibly concerning your users’ data and how to develop a good
     understanding of fundamental security topics.
-  image: talk-concat-websecurity.jpg
   path: https://frederic-hemberger.de/talks/concat-websecurity/
   links:
-      'Slides': https://frederic-hemberger.de/talks/concat-websecurity/
-      'Resources': https://github.com/fhemberger/talks/tree/master/websecurity
-  held:
-    - { date: '2015-03-07', event: '<a href="http://conc.at">.concat() 2015</a>, Salzburg' }
+    'Resources': https://github.com/fhemberger/talks/tree/master/websecurity
+  events:
+    - date: '2015-03-07'
+      name: .concat() 2015
+      city: Salzburg
+      url: https://2015.conc.at/
 
 -
   lang: en
   title: hapi – Building applications and services in Node.js
-  date: 2015-02-10
+  date: '2015-02-10'
   intro: |
     hapi is a framework for building web applications, services and RESTful APIs in Node.js.
     Besides being the core building block for Walmart’s mobile platform, it also powers the new
     npm website and many others.
-  image: talk-hapi.svg
   path: https://frederic-hemberger.de/talks/hapi/
   links:
-    'Slides': https://frederic-hemberger.de/talks/hapi/
-  held:
-    - { date: '2015-02-10', event: '<a href="http://colognejs.de">Cologne.js</a>, Cologne' }
+  events:
+    - date: '2015-02-10'
+      name: Cologne.js
+      city: Cologne
+      url:
 
 -
   lang: en
   title: Login failed. Retry? – Website authentication methods and UX
-  date: 2014-09-11
+  date: '2014-09-11'
   intro: |
     Website authentication can become quite peculiar at times, both from a technical and user
     experience view. Addressing some of the bad practices, I present a few suggestions to improve
     the situation and make it easier for your users to login with your site.
-  image: talk-login-failed.png
   path: https://frederic-hemberger.de/talks/login-failed--authentication-and-ux/
   links:
-    'Slides': https://frederic-hemberger.de/talks/login-failed--authentication-and-ux/
     'Video (short version)': https://vimeo.com/113493698
-  held:
-    - { date: '2014-09-11', event: '<a href="http://webworker-nrw.de/">Webworker NRW</a>, Düsseldorf' }
-    - { date: '2014-10-08', event: '<a href="https://fronteers.nl/congres/2014/jam-session">Fronteers Jam Session</a>, Amsterdam' }
-    - { date: '2014-10-29', event: '<a href="http://uxcgn.org/meetups/uxcgn-12/">#UXCGN12</a>, Cologne' }
+  events:
+    - date: '2014-09-11'
+      name: Webworker NRW
+      city: Düsseldorf
+      url: https://webworker-nrw.de/
+    - date: '2014-10-08'
+      name: Fronteers Jam Session
+      city: Amsterdam
+      url: https://fronteers.nl/congres/2014/jam-session
+    - date: '2014-10-29'
+      name: '#UXCGN12'
+      city: Cologne
+      url: http://uxcgn.org/meetups/uxcgn-12/
 
 -
   lang: en
   title: Digital self-defense – Mitigate Clickjacking and XSS attacks with HTTP headers
-  date: 2014-04-27
+  date: '2014-04-27'
   intro: |
     Web security is for the most part an unloved stepchild for most developers, but in this talk
     I’ll show you how at least two typical attack scenarios - clickjacking and injection of
@@ -130,21 +156,22 @@
     offers in modern browsers.
 
     _(English version of my talk "Digitale Selbstverteidigung", which I held
-    spontaneously at [JS Unconf 2014](http://2014.jsunconf.eu/).)_
-  image: talk-web-security-en.jpg
+    spontaneously at <a href="https://2014.jsunconf.eu/" rel="noreferrer">JS Unconf 2014</a>.)_
   path: https://frederic-hemberger.de/talks/web-security/en.html
   links:
-    'Slides': https://frederic-hemberger.de/talks/web-security/en.html
     'Links/Resources': https://frederic-hemberger.de/talks/web-security/en.html#/48
-  held:
-    - { date: '2014-04-27', event: '<a href="http://2014.jsunconf.eu/">JS Unconf 2014</a>, Hamburg' }
+  events:
+    - date: '2014-04-27'
+      name: JS Unconf 2014
+      city: Hamburg
+      url: https://2014.jsunconf.eu/
 
 -
   lang: en
   title: Running Node.js apps in production
-  date: 2014-04-26
+  date: '2014-04-26'
   intro: |
-    At <a href="http://2014.jsunconf.eu/">JS Unconf 2014</a> I talked about pros and cons of
+    At <a href="https://2014.jsunconf.eu/" rel="noreferrer">JS Unconf 2014</a> I talked about pros and cons of
     different deployment techniques for your Node.js application, what makes a good startup script
     and how to keep downtime to a minimum during deployment.
 
@@ -152,38 +179,46 @@
     crash. Metrics and log files help you to understand, how your application behaves in production,
     but as grepping through tons logfiles can be cumbersome, I’ll show you why Elasticsearch and
     Logstash might be a good alternative for you.
-  image: talk-nodejs-in-production.png
   path: https://frederic-hemberger.de/talks/nodejs-in-production/
   links:
-    'Slides': https://frederic-hemberger.de/talks/nodejs-in-production/
     'Links': https://github.com/fhemberger/talks/blob/master/nodejs-in-production/README.md
-  held:
-    - { date: '2014-04-08', event: '<a href="http://colognejs.de">Cologne.js</a>, Cologne' }
-    - { date: '2014-04-26', event: '<a href="http://2014.jsunconf.eu/">JS Unconf 2014</a>, Hamburg' }
+  events:
+    - date: '2014-04-08'
+      name: Cologne.js
+      city: Cologne
+      url:
+    - date: '2014-04-26'
+      name: JS Unconf 2014
+      city: Hamburg
+      url: https://2014.jsunconf.eu/
 
 -
   lang: de
   title: Digitale Selbstverteidigung – Mehr Sicherheit auf der eigenen Website
-  date: 2014-01-09
+  date: '2014-01-09'
   intro: |
     Sicherheit von Webseiten wird von vielen Entwicklern – wenn überhaupt – meistens herumgereicht
     wie der Schwarze Peter. Bestenfalls soll sich jemand anderes darum kümmern. In diesem Talk
     zeige ich, wie sich zumindest zwei Angriffsszenarien – Clickjacking und Einschleusen
     unerwünschten Codes – schon mit einfachen Mitteln etwas entschärfen lassen und welche
     Möglichkeiten die Content-Security-Policy im Browser bietet.
-  image: talk-web-security.jpg
   path: https://frederic-hemberger.de/talks/web-security/
   links:
-    'Slides': https://frederic-hemberger.de/talks/web-security/
     'Links/Resourcen': https://frederic-hemberger.de/talks/web-security/#/48
-  held:
-    - { date: '2014-01-09', event: '<a href="http://webworker-nrw.de/">Webworker NRW</a>, Düsseldorf' }
-    - { date: '2014-02-27', event: '<a href="http://webworker.ruhr/">Webworker Ruhr</a>, Essen' }
+  events:
+    - date: '2014-01-09'
+      name: Webworker NRW
+      city: Düsseldorf
+      url: https://webworker-nrw.de/
+    - date: '2014-02-27'
+      name: Webworker Ruhr
+      city: Essen
+      url: https://webworker.ruhr/
 
 -
   lang: de
   title: Einführung in Require.js
-  date: 2014-01-09
+  date: '2014-01-09'
   intro: |
     JavaScript-Code in Websites und -applikationen wird immer umfangreicher, mit zunehmender
     Komplexität ist aber dieser Code deutlich schlechter zu warten: Codepflege in große Dateien
@@ -193,28 +228,33 @@
     Require.js bietet die Möglichkeit, Code sauber in kleine Module zu unterteilen und die jeweils
     benötigten Teilkomponenten in der richtigen Reihenfolge zu laden. So lässt sich der Code auch
     in möglichst kleinen Einheiten besser testen.
-  image: talk-requirejs.png
   path: https://frederic-hemberger.de/talks/requirejs/
   links:
-    'Slides': https://frederic-hemberger.de/talks/requirejs/
     'Demos': https://github.com/fhemberger/talks/tree/master/requirejs
-  held:
-    - { date: '2014-01-09', event: '<a href="http://webworker-nrw.de/">Webworker NRW</a>, Düsseldorf' }
-    - { date: '2014-02-27', event: '<a href="http://webworker.ruhr/">Webworker Ruhr</a>, Essen' }
+  events:
+    - date: '2014-01-09'
+      name: Webworker NRW
+      city: Düsseldorf
+      url: https://webworker-nrw.de/
+    - date: '2014-02-27'
+      name: Webworker Ruhr
+      city: Essen
+      url: https://webworker.ruhr/
 
 -
   lang: de
   title: Code-Organisation in JavaScript
-  date: 2013-01-10
+  date: '2013-01-10'
   intro: |
     Wie kann ich meinen JavaScript-Code sauber kapseln, damit es ungewünschte Überschneidungen mit
     anderen Scripten oder externen Bibliotheken gibt? Eine kurze Übersicht über Function Expressions,
     das Module-Pattern, Entkopplung von Komponenten mittels PubSub und wie sich Code modularisieren
     lässt.
-  image: talk-codeorganisation.png
   path: https://frederic-hemberger.de/talks/js-codeorganisation/
   links:
-    'Slides': https://frederic-hemberger.de/talks/js-codeorganisation/
     'Slides (PDF)': https://frederic-hemberger.de/talks/js-codeorganisation/Code-Organisation%20in%20JavaScript%20-%20Frederic%20Hemberger.pdf
-  held:
-    - { date: '2013-01-10', event: '<a href="http://webworker-nrw.de/">Webworker NRW</a>, Düsseldorf' }
+  events:
+    - date: '2013-01-10'
+      name: Webworker NRW
+      city: Düsseldorf
+      url: https://webworker-nrw.de/

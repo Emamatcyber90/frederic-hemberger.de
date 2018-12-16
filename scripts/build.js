@@ -71,7 +71,7 @@ function build () {
       domain: 'frederic-hemberger.de',
       token: process.env.WEBMENTION_API_KEY
     })))
-    .use(mergeCollections(['articles', 'talks'/*, 'thoughts' */], 'all'))
+    .use(mergeCollections(['articles', 'talks'], 'all'))
     .use(onlyProduction(feed({
       collection: 'talks',
       destination: 'feeds/talks.rss'
@@ -89,10 +89,6 @@ function build () {
         return itemData
       }
     })))
-    // .use(onlyProduction(feed({
-    //   collection: 'thoughts',
-    //   destination: 'feeds/thoughts.rss'
-    // })))
     .use(prism())
     .use(filterStylusPartials())
     .use(stylus({

@@ -1,19 +1,16 @@
 'use strict'
 
-const url = require('url')
 const fetch = require('node-fetch')
 
 module.exports = function webmentions (options) {
   options = options || {}
 
   if (!options.domain) {
-    console.error('webmention.io: Domain name required')
-    process.exit(1)
+    throw new TypeError('webmention.io: Domain name required')
   }
 
   if (!options.token) {
-    console.error('webmention.io: API token required')
-    process.exit(1)
+    throw new TypeError('webmention.io: API token required')
   }
 
   return async function (files, metalsmith, done) {
@@ -27,7 +24,7 @@ module.exports = function webmentions (options) {
     const bucket = {}
     json.links
       .forEach(webmention => {
-        const path = url.parse(webmention.target).pathname
+        const path = (new URL(webmention.target)).pathname
         bucket[path] = bucket[path] || {}
         bucket[path][webmention.activity.type] = bucket[path][webmention.activity.type] || []
         bucket[path][webmention.activity.type].push(webmention.data)

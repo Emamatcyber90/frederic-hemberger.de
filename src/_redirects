@@ -18,6 +18,7 @@ https://www.frederic-hemberger.de/*                       https://frederic-hembe
 /artikel/talk-*                                           /talks/:splat
 /artikel/*                                                /articles/
 
+/feed/                                                    /feed/index.xml       200!
 /feed                                                     /feed/
 /feeds/*                                                  /feed/
 /atom.xml                                                 /feed/

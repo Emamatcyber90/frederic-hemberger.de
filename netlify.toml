@@ -5,8 +5,3 @@
 
 [build.environment]
   NODE_ENV = "production"
-
-[[redirects]]
-  from = "/feed/"
-  to = "/feed/index.xml"
-  status = 200

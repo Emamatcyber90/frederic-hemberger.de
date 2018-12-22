@@ -32,19 +32,19 @@ function onlyProduction (child) {
   return child
 }
 
+const site = {
+  title: 'Frederic Hemberger',
+  author: 'Frederic Hemberger',
+  description: 'Freelance web developer and consultant from Cologne, Germany.',
+  url: 'https://frederic-hemberger.de'
+}
+
 function build () {
   console.time('[metalsmith] Build finished')
   Metalsmith(process.cwd())
-    .metadata({
-      site: {
-        title: 'Frederic Hemberger',
-        author: 'Frederic Hemberger',
-        url: 'https://frederic-hemberger.de'
-      }
-    })
+    .metadata({ site })
     .use(collections({
-      articles: { pattern: 'articles/*.md', refer: false, sortby: 'date', reverse: true },
-      thoughts: { pattern: 'thoughts/*.md', refer: false, sortby: 'date', reverse: true }
+      articles: { pattern: 'articles/*.md', refer: false, sortby: 'date', reverse: true }
     }))
     .use(markdown({ langPrefix: 'language-' }))
     .use(permalinks({
@@ -71,22 +71,39 @@ function build () {
       domain: 'frederic-hemberger.de',
       token: process.env.WEBMENTION_API_KEY
     })))
-    .use(mergeCollections(['articles', 'talks'], 'all'))
+    .use(mergeCollections(['articles', 'talks'], 'feed'))
     .use(onlyProduction(feed({
-      collection: 'talks',
-      destination: 'feeds/talks.rss'
-    })))
-    .use(onlyProduction(feed({
-      collection: 'all',
-      destination: 'feeds/feed.rss',
+      collection: 'feed',
+      destination: 'feed/index.xml',
+      // Not a valid RSS <channel> item
+      author: null,
+      description: site.description,
       preprocess: (itemData) => {
-        if (itemData.description) {
-          itemData.description = itemData
-            .description.toString('utf8')
-            .replace(/\/static\//g, 'https://frederic-hemberger.de/static/')
+        let title = itemData.title
+        let description = itemData.description
+
+        if (itemData.collection.includes('talks')) {
+          title = `Talk: ${title}`
         }
 
-        return itemData
+        if (itemData.collection.includes('articles')) {
+          title = `Article: ${title}`
+        }
+
+        if (description) {
+          description = description
+            .toString('utf8')
+            .replace(/(\/static\/)/g, `${site.url} $1`)
+        }
+
+        return {
+          title: title,
+          description: description || itemData.intro,
+          url: itemData.url,
+          categories: itemData.collection,
+          author: site.author,
+          date: itemData.date
+        }
       }
     })))
     .use(prism())
@@ -111,7 +128,11 @@ function build () {
     .use(onlyProduction(inlineBaseCss()))
     .use(onlyProduction(htmlMinifier()))
     .build((err) => {
-      if (err) { throw err }
+      if (err) {
+        console.error('[metalsmith] Build error:\n')
+        console.error(err.stack)
+        process.exit(1)
+      }
       console.timeEnd('[metalsmith] Build finished')
     })
 }

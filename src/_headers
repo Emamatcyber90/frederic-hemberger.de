@@ -6,7 +6,7 @@
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
 
-/feeds/*
+/feed/*
   Content-Type: application/rss+xml; charset=UTF-8
 
 /talks/*

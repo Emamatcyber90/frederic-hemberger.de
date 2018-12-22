@@ -3,12 +3,13 @@
   "description": "",
   "private": true,
   "scripts": {
-    "postinstall": "./scripts/add-subtree.sh",
-    "update": "./scripts/update-subtree.sh",
-    "build": "./scripts/build.js",
+    "postinstall": "./scripts/add-talks-subtree.sh",
+    "talks:copy": "rsync -qavz --exclude '/.git*' --exclude '/index.html' talks/ build/talks",
+    "talks:update": "./scripts/update-talks-subtree.sh",
+    "build:production": "./scripts/build.js",
+    "build": "NODE_ENV=development ./scripts/build.js",
     "serve": "NODE_ENV=development ./scripts/serve.js",
-    "talks": "rsync -qavz --exclude '/.git*' --exclude '/index.html' talks/ build/talks",
-    "netlify": "for s in build update talks; do npm run $s; done"
+    "netlify": "for step in build:production talks:update talks:copy; do npm run $step; done"
   },
   "dependencies": {
     "autoprefixer-stylus": "^0.14.0",

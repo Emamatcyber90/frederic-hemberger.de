@@ -10,9 +10,16 @@ module.exports = function externalCollections (options) {
     let metadata = metalsmith.metadata()
     metadata.collections = metadata.collections || {}
 
-    Object.keys(options).forEach(function (key) {
+    Object.keys(options).forEach(function (collectionName) {
       try {
-        metadata.collections[key] = Yaml.safeLoad(Fs.readFileSync(options[key], 'utf8'))
+        let yamlContent = Yaml.safeLoad(Fs.readFileSync(options[collectionName], 'utf8'))
+
+        yamlContent = yamlContent.map(item => {
+          item.collection = [collectionName]
+          return item
+        })
+
+        metadata.collections[collectionName] = yamlContent
       } catch (err) {
         done(err)
       }

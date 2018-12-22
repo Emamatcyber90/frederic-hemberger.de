@@ -2,6 +2,18 @@
 
 const fetch = require('node-fetch')
 
+// @ts-ignore
+global.URL = global.URL || (() => {
+  const url = require('url')
+
+  return class URL {
+    constructor (input) {
+      // eslint-disable-next-line node/no-deprecated-api
+      return url.parse(input)
+    }
+  }
+})()
+
 module.exports = function webmentions (options) {
   options = options || {}
 

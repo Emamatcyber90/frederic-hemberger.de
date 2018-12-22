@@ -3,6 +3,9 @@
   publish = "build"
   command = "npm run netlify"
 
+[build.environment]
+  NODE_ENV = "production"
+
 [[redirects]]
   from = "/feed/"
   to = "/feed/index.xml"

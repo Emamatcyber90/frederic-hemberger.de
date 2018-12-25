@@ -137,6 +137,7 @@ function build () {
     })
 }
 
+// @ts-ignore
 if (!module.parent) {
   build()
 }

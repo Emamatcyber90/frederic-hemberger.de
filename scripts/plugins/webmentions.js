@@ -29,6 +29,7 @@ module.exports = function webmentions (options) {
     let metadata = metalsmith.metadata()
 
     console.log(`[metalsmith] Loading webmentions for ${options.domain}`)
+    // @ts-ignore
     const res = await fetch(`https://webmention.io/api/mentions?sort-by=published&sort-dir=up&per-page=${Number.MAX_SAFE_INTEGER}&domain=${options.domain}&token=${options.token}`)
     const json = await res.json()
 

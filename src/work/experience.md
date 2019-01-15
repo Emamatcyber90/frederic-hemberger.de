@@ -5,7 +5,7 @@ html_title: Professional experience and recent projects
 skills:
   - section: General
     list:
-      - Agile Methologies (Scrum, Kanban)
+      - Agile practices (Scrum, Kanban)
       - Software Architecture
       - Security
 
@@ -16,21 +16,21 @@ skills:
       - Accessibility
       - Usability
       - Responsive Design
-      - HTML5, CSS/Sass/Stylus, JavaScript, Vue.js
+      - HTML5, CSS/&#8203;Sass/&#8203;Stylus, JavaScript, Vue.js
       - Node.js (Contributor)
       - <strong>Application Frameworks</strong>&#58; hapi.js, Express
       - <strong>Unit Testing/Code Quality</strong>&#58; Lab, Mocha, Chai, Jest, ESLint
       - <strong>Tools</strong>&#58; Bash, Git
-      
+
   - section: Infrastructure
     list:
       - <acronym title="Amazon Web Services">AWS</acronym>
-      - <strong>CI/CD</strong>&#58; GitLab, Travis CI, CircleCI, Codeship, Jenkins
+      - <strong><acronym title="Continuous Integration/Continuous Delivery">CI/CD</acronym></strong>&#58; GitLab, Travis CI, CircleCI, Codeship, Jenkins
       - <strong>Databases</strong>&#58; MySQL, MongoDB, InfluxDB
       - <strong>Containers and orchestration</strong>&#58; Docker, Kubernetes, Helm
       - <strong>Observability</strong>&#58; Prometheus, Grafana, ELK stack (ElasticSearch, Logstash, Kibana)
       - <strong>Deployment</strong>&#58; Ansible, Terraform
-      - <strong>Web Server</strong>&#58; Apache, nginx, Tr&aelig;fik
+      - <strong>Web Server/&#8203;Proxies</strong>&#58; Apache, nginx, Tr&aelig;fik
 ---
 
 - Two decades of hands-on experience with web technologies and standards

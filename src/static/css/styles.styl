@@ -29,7 +29,7 @@ html
   @media screen and (max-width $single-column-width)
     font-size 16px
 
-  @media (prefers-dark-interface)
+  @media (prefers-color-scheme: dark)
     background $background-color-darkmode
     color $text-color-darkmode
 
@@ -40,7 +40,7 @@ html
   background colormode('selection-color')
   color colormode('background-color')
 
-  @media (prefers-dark-interface)
+  @media (prefers-color-scheme: dark)
     background $selection-color-darkmode
     color $background-color-darkmode
 
@@ -49,13 +49,13 @@ body
   margin 0
   padding 0
 
-  @media (prefers-dark-interface)
+  @media (prefers-color-scheme: dark)
     border-top: 1px solid $header-color-darkmode
 
   header > .container
     border-top 0.4rem solid colormode('header-color')
 
-    @media (prefers-dark-interface)
+    @media (prefers-color-scheme: dark)
       border-top 0.4rem solid $header-color-darkmode
 
   > footer
@@ -77,7 +77,7 @@ h5
   margin-bottom .5rem
   color colormode('headline-color')
 
-  @media (prefers-dark-interface)
+  @media (prefers-color-scheme: dark)
     color $headline-color-darkmode
 
   a
@@ -102,7 +102,7 @@ a:active
   text-decoration none
   transition color 1s ease-out
 
-  @media (prefers-dark-interface)
+  @media (prefers-color-scheme: dark)
     color $link-color-darkmode
 
 a:hover,
@@ -110,7 +110,7 @@ a:active,
 a.active
   color colormode('link-active-color')
 
-  @media (prefers-dark-interface)
+  @media (prefers-color-scheme: dark)
     color $link-active-color-darkmode
 
 .p-name > a
